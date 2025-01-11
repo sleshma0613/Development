@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: height 101vh; 
+    background-image:url("closeup-macro-shot-watch.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   margin: 0;
+   padding: 0;
+   
+
+}
+.loginForm{
+    width: 420px;
+    background: transparent;
+    
+}
+.loginForm h1{
+    font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  text-align: center;
+}
+.loginForm.input{
+    text-align: center;
+}
+
+
