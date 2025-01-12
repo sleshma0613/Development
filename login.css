@@ -27,6 +27,7 @@ body{
   font-style: normal;
   font-size: 36px;
   text-align: center;
+  margin-bottom: 50px;
 }
 .input{
   text-align: center;
@@ -39,6 +40,7 @@ body{
     font-size: 15px;
     padding: 0 25px;
     
+    
     border: none;
     box-shadow:0px 2px 8px ;
   }
@@ -46,6 +48,7 @@ body{
 
 .loginForm.input{
     text-align: center;
+   
 }
 
 button{
@@ -71,9 +74,10 @@ button{
 }
 .forgot
 {
-  text-align: center;
-  margin-left: 100px;
-  font-size: 10px;
+  margin-bottom: 30px;
+  margin-left: 115px;
+  font-size: 15px;
+  margin-top: 18px;
 }
     
 .signup{
