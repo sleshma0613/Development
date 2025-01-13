@@ -67,8 +67,8 @@ button{
 
 
 }
- .button:hover{
-    background-color: blue;
+ button:hover{
+    background-color: rgb(255, 0, 0);
 
     
 }
@@ -85,5 +85,10 @@ button{
   
 }
 
-
+a {
+  color: black;
+}
+a:hover {
+  color: rgb(55, 17, 245); 
+}
 
