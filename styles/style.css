@@ -1,0 +1,37 @@
+
+h1{
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    font-style:italic;
+    text-align: center;
+    margin:auto;
+}
+a:hover{color:#dda15e;}
+
+.content{
+   
+    
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.current{
+    background-color:#f8eac8;
+    height:40px;
+}
+img{
+    width:1500px;
+    height:600px;
+    object-fit:cover;
+    opacity: 100%;
+    border-radius: 10px;
+}
