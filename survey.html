@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html>
-<title>Survey Form</title>
+
 
 <head>
+    <title>Survey Form</title>
     <link rel="stylesheet" href="style1.css">
-    <form>
-
-        <h2 align="center">Survey Form</h2>
-        <label for="Name">Name</label><br>
-        <input type="text" id="name"><br>
-        <label for="Email">Email</label><br>
-        <input type="text" id="email"><br>
-        <label for="How knew about us">How did you hear about us?</label><br>
-
-        <label class="container">Tiktok
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">Instagram
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">Friends
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
-
-        <label class="container">Others
-            <input type="checkbox" checked="checked">
-            <span class="checkmark"></span>
-        </label>
-    </form>
 </head>
+    <body>
+        <h1>Survey Form </h1>
+        <form name="messageForm" onsubmit="validateForm()"
+            <label>Name: </label>
+            <input type="text" name="name" required><br><br>
+            <label>Email: </label>
+            <input type="email" name="email" required><br><br>
+            <label>Gender: </label>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female" checked>Female
+            <input type="radio" name="gender" value="others" checked>Others
+            <p>Message: <br><textarea name="message" rows="10" cols="30" placeholder="Enter Message"></textarea></p>
+        </form>
+        <script>
+            function validateForm() {
+                var name= document.forms["messageForm"] ["name"].value;
+                var email= document.forms["messageForm"] ["email"].value;
+                var gender= document.forms["messageForm"] ["gender"].value;
+                var message= document.forms["messageForm"] ["message"].value;
+
+                if (name == "" || email == "" || message == ""){
+                    alert("Empty fields found. Please fill the form.");
+                }
+                else{
+                    alert("Than you for your feedback.");
+                }
+            }
+        </script>
+    </body>
+</html>
+
+        
+           
+    
+
+    
 <a href="blog.html">Back to Blog Page</a>
 
 </html>
