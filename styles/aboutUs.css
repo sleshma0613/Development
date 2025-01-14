@@ -70,21 +70,8 @@ body, html {
 .card-content {
     padding: 20px;
 }
-footer {
-    background-color: #000000;
-    color: rgb(244, 240, 240);
-    padding: 20px;
+
+
+.footer{
     text-align: center;
 }
-
-.footer-content {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-}
-
-.footer-content h3 {
-    margin: 0; /* Remove margin */
-    padding-bottom: 90px; /* Optional: Add some padding below the heading */
-}
-
