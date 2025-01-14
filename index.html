@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nova times</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="E-Commerce Website For Watches">
+    <meta name="keywords" content="watch, classic, smart">
+    <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <style>
+      a {
+        text-decoration: none;
+        font-family: Cormorant Garamond, serif;
+        color: black;
+        font-size: 21px;
+        font-weight: 600;
+        flex: 1;
+        transition: color 0.44s;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:hover {
+        color: gold;
+      }
+    </style>
+    <link rel="stylesheet" href="styles/homepage.css">
+  </head>
+  <body>
+    <nav style="
+        background-color: #a69080;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      ">
+      <a class="logo-container" href="#">
+        <img class="company-logo" src="images/logo.png">
+      </a>
+      <a href="index.html">HOME</a>
+      <a href="#">PRODUCTS</a>
+      <a href="pages/blog.html">BLOG</a>
+      <a href="#">RESEARCH</a>
+      <a href="pages/aboutus.html">ABOUT US</a>
+      <a href="#"><button class="login-button">Login</button></a>
+    </nav>
+
+    <div class="slideshow">
+      <div class="slides slides-js fade"></div>
+    </div>
+    
+    <section class="hero-section">
+      <div class="featured-collection">
+        <div class="featured-heading">FEATURED COLLECTION</div>
+        <div class="featured-catalogue featured-catalogue-js"></div>
+      </div>
+    </section>
+    <section class="categories categories-js"></section>
+    <script src="scripts/homepage.js" type="module"></script>
+  </body>
+</html>
