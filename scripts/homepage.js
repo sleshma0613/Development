@@ -1,4 +1,24 @@
-import { products } from "./products.js";
+let products = [
+  {
+    product_id : "1",
+    product_name : "Omega Pilot",
+    product_price : "300000 NPR",
+    product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
+    product_image: "../images/watches/Home_SP_Pilot_KV_Push.avif"
+  }
+];
+
+let slideImageElement = document.querySelector(".slides-js");
+
+function slideshow() {
+  slideImageElement.innerHTML = `
+    <img src="images/slide2.jpg" width = 100% height = 440px style = "
+    object-fit: cover
+    ">
+  `
+}
+
+slideshow();
 
 function renderFeaturedProducts() {
   const productElement = document.querySelector(".featured-catalogue-js");

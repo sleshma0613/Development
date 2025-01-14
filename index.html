@@ -16,11 +16,11 @@
       a {
         text-decoration: none;
         font-family: Cormorant Garamond, serif;
-        color: #FFF0DC;
+        color: black;
         font-size: 21px;
         font-weight: 600;
         flex: 1;
-        transition: background-color 0.26s, color 0.26s;
+        transition: color 0.44s;
         text-align: center;
         height: 100%;
         display: flex;
@@ -29,29 +29,34 @@
       }
 
       a:hover {
-        background-color: #131010;
-        color: white;
+        color: gold;
       }
     </style>
     <link rel="stylesheet" href="styles/homepage.css">
   </head>
   <body>
     <nav style="
-        background-color: #543A14;
+        background-color: #a69080;
         height: 62px;
         display: flex;
         align-items: center;
         justify-content: space-between;
       ">
-      <a href="#">
-        <img class="company-logo" src="images/company_logo.png">
+      <a class="logo-container" href="#">
+        <img class="company-logo" src="images/logo.png">
       </a>
       <a href="index.html">HOME</a>
       <a href="#">PRODUCTS</a>
       <a href="pages/blog.html">BLOG</a>
       <a href="#">RESEARCH</a>
       <a href="pages/aboutus.html">ABOUT US</a>
+      <a href="#"><button class="login-button">Login</button></a>
     </nav>
+
+    <div class="slideshow">
+      <div class="slides slides-js fade"></div>
+    </div>
+    
     <section class="hero-section">
       <div class="featured-collection">
         <div class="featured-heading">FEATURED COLLECTION</div>
