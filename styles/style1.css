@@ -1,52 +1,89 @@
 body{
-    background-image:url(imagges/W2.jpg);
+    background-image:url(../images/W3.jpg);
+    font-family: sans-serif;
+    min-height:100vh; /*100% of the viewport height*/
+    padding:20px;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    align-items: center;
+    margin:0;
+    padding:0;
+    color:#000000;
+    margin-inline:450px;
     
-    height:100%;
-    width:100%;
     }
-    /*Customize the label*/
+    
+    h1{
+        font-size: 40px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight:bold;
+        font-style:italic;
+       text-align: center;
+        margin:auto;
+        
+    }
+    h2{
+        font-size: 15px;
+        font-family:'Times New Roman', Times, serif;
+        margin:auto;
+        text-align: center;
+        
+    }
+    .form-container{
+        width:500px;
+        padding:20px;
+        text-align: left;
+        background-color: rgba(245, 238, 242, 0.9);
+    }
+    label{
+        display: block;
+        font-size: 15px;
+        margin-bottom:10px 0 5px;
+    
+    }
+    .form-group{
+        margin-bottom:10px;
+    }
+    *{
+        box-sizing:border-box;
+        margin:0;
+        padding:0;
+    }
+    input, textarea, select{
+        width: 80%;
+        padding:10px;
+       display: inline-block;
+
+    }
+    input[type=text]:focus, input[type=email]:focus{
+        background-color: #dfdcdc;
+        outline:none;
+    }
+    
+
+    button:hover{
+    background-color: #f599bc;
+    color: #ffffff;
+    cursor: pointer;
+    opacity: 1;
+    
+    }
+    button{
+        padding:8px;
+        text-align: center;
+        border:2px;
+        width: 100px;
+        background-color:rgb(236, 177, 128);
+        font-weight:bold;
+    }
     .container{
-        display:block;
-        position:relative;
-        padding-left:35px;
-        margin-bottom:12px;
-        cursor:pointer;
-        font-size:22px;
--webkit-user-select:none;
--moz-user-select:none;
--ms-user-select:none;
-user-select:none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
-    /*Hide the browers default checkbox*/
-.checkmark{
-    position:absolute;
-    opacity:0;
-    cursor:pointer;
-    height:0;
-    width:0;
-}
-/*create a custom checkbox*/
-.checkmark{
-position:absolute;
-top:0;
-left:0;
-height:25px;
-width:25px;
-background-color: #eee;
-}
-/*when the checbox is checked, add a blue background*/
-.container input:checked ~ .checkmark{
-    background-color:#2196F3;
-}
-/*create the checkmark and style it*/
-.checkmark:after{
-    content:"";
-    position:absolute;
-    display:none;
-}
-/*show the checked when checked*/
-.container input:checked ~ .checkmark:after{
-    display:block;
-}
-
-
+    input[type=radio]{
+        margin-right: 5px;
+    }
+   
