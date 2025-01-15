@@ -2,66 +2,72 @@
 <html lang="en">
 
 <head>
-    <title>My Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Website about watches">
     <meta name="keywords" content="HTML, CSS, Javascript">
-    <meta name="refresh" content="30">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="../styles/style.css"><!--link for external css-->
+    <!--inline css-->
+    <style>
+        .container {
+            /*parallax scrolling effect*/
+            background-image: url("../images/W1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            background-position: center;
+            display: flex;
+            border-radius: 8px;
+        }
 
-    <link rel="stylesheet" href="../styles/style.css">
-
+        .content {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-size: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav>
-        <table>
-            <tr>
-                <th class="menu">
-                    <a href="../index.html">Home</a>
-                </th>
-                <th class="menu">
-                    <a href="#">Products</a>
-                </th>
-                <th class="current">
-                    <a href="../pages/blog.html">Blog</a>
-                </th>
-                <th class="menu">
-                    <a href="#">Research</a>
-                </th>
-                <th class="menu">
-                    <a href="../pages/aboutus.html">About us</a>
-                </th>
-            </tr>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="../index.html">HOME</a></li>
 
-        </table>
+            <li><a href="#">PRODUCTS</a></li>
 
+            <li> <a href="../pages/blog.html">BLOG</a></li>
+
+            <li><a href="#">RESEARCH</a></li>
+
+            <li><a href="../pages/aboutus.html">ABOUT US</a></li>
+
+        </ul>
     </nav>
     <header>
         <h1>My Blog</h1>
     </header>
-
-
-
-    <div class="container">
-        <img src="../images/W1.jpg" alt="vintage waterproof quartz brown watch">
-
-        <div class="content">
-            <p>This a blog website about watches, they are innovative and brings newness to the marketplace.
-            </p>
-        </div>
+    <div class="container"></div>
+    <div class="content">
+        <h2>About Vintage Watch</h2>
     </div>
-    <div>
+
+
+    <div class="survey">
 
         <a href="../pages/survey.html">Survey Form</a>
 
         <!--this is a footer and copyright of this website-->
-
-        <footer>
-            <p align="center"><b>&copy;NovaTime 2025</p></b>
-        </footer>
     </div>
+    <footer>
+        <p align="center"><b>&copy;NovaTime 2025</p></b>
+    </footer>
+
 
 </body>
 
