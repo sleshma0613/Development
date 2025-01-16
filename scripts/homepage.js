@@ -8,17 +8,23 @@ let products = [
   }
 ];
 
-let slideImageElement = document.querySelector(".slides-js");
+// let slideImageElement = document.querySelector(".slides-js");
 
-function slideshow() {
-  slideImageElement.innerHTML = `
-    <img src="images/slide2.jpg" width = 100% height = 440px style = "
-    object-fit: cover
-    ">
-  `
-}
+// function slideshow(num) {
+//   slideImageElement.innerHTML = `
+//     <img src="images/slide${num}.jpg" width = 100% height = 440px style = "
+//     object-fit: cover
+//     ">
+//   `
+// }
 
-slideshow();
+// function runSlideshow() {
+//   for (i = 2; i <= 3; i++) {
+//     slideshow(i);
+//   }
+// }
+
+// runSlideshow();
 
 function renderFeaturedProducts() {
   const productElement = document.querySelector(".featured-catalogue-js");
