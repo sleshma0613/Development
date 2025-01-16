@@ -59,4 +59,28 @@ img{
     object-fit: cover;
     display:block;
 }
+.card {
+    background: rgba(0, 0, 0, 0.264);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 300px;
+    margin-top: 100px;
+    align-content:end ;
+    float: left;
+    transition: transform 0.2s;
+    cursor: pointer; /* Change cursor to pointer */
+}
+.card img {
+    width: 70%;
+    height: auto;
+    border-top-left-radius: 8px;
+     border-top-right-radius: 8px;
+     
+     
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 .survey a:hover{color:#8c00ff}

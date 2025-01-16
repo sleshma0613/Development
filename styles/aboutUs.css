@@ -4,7 +4,7 @@ body, html {
     height: 100%;
 }
 .navbar {
-    background-color: #a69080;
+    background-color: transparent;
         height: 62px;
         display: flex;
         align-items: center;
@@ -13,6 +13,8 @@ body, html {
         font-weight: 600;
         font-size: 21px;
         font-family: Cormorant Garamond, serif;
+        border: black 2px solid;
+        
         
         
     
