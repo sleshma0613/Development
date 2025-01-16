@@ -1,9 +1,8 @@
 body {
   margin: 0;
-  background-color: #3e362e;
-  color: white;
+  color: black;
   height: 1500px;
-  font-family: Cormorant Garamond, serif;
+  font-family: serif;
 }
 
 .company-logo {
@@ -14,11 +13,11 @@ body {
 .login-button {
   border: none;
   background: transparent;
-  font-family: Cormorant Garamond, serif;
+  font-family: serif;
   height: 100%;
   cursor: pointer;
   font-size: 21px;
-  font-weight: 600;
+  font-weight: 500;
   color: white;
 }
 
@@ -29,95 +28,70 @@ body {
 .slideshow {
   width: 100%;
   position: relative;
+  height: 440px;
 }
 
-.prev, .next {
-  cursor: pointer;
+.next-slide, .prev-slide {
   position: absolute;
-  top: 3%;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.next {
-  right: 0;
-}
-
-.slide-text {
-  color: white;
+  top: 40%;
+  height: 80px;
   font-size: 17px;
-  padding: 8px 12px;
-  position: relative;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.slide-number {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.44);
   color: white;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: relative;
-  top: 0;
-}
-
-.dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: all 0.6s;
+  border-radius: 8px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.next-slide:hover, .prev-slide:hover {
+  background-color: gold;
+  color: black;
 }
 
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+.prev-slide {
+  left: 0;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.next-slide {
+  right: 0;
 }
 
 .featured-heading {
   display: flex;
   height: 60px;
   align-items: center;
-  background-color: #F0BB78;
+  background-color: #39362e;
   justify-content: center;
   color: #131010;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: serif;
+  font-weight: 500;
+  color: gold;
 }
 
 .featured-catalogue {
   display: flex;
-  flex-direction: column;
+  margin: 20px 20px;
 }
 
 .featured-product {
   font-family: serif;
-  margin-top: 10px;
   display: flex;
-  transition: box-shadow 0.4s;
-  flex: 1;
-  background-color: #FCFAEE;
+  transition: all 0.4s;
+  background-color: rgba(240, 188, 120, 0.564);
+  border-radius: 8px;
+  color: black;
+  cursor: pointer;
 }
 
 .featured-product:hover {
-  box-shadow: 1px 1px 4px black;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.797);
+  transform: scale(1.035);
 }
 
 .product-image {
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .product-name {
@@ -157,17 +131,17 @@ body {
 
 .action-button {
   cursor: pointer;
-  font-family: Cormorant Garamond, serif;
+  font-family: serif;
   padding: 10px 10px;
-  font-weight: 700;
-  border: solid 1px rgba(0, 0, 0, 0.8);
-  border-radius: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 11px;
   transition: translate 0.3s, box-shadow 0.3s;
 }
 
 .action-button:hover {
   translate: -3px -3px;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.555);
 }
 
 .action-button:active {
@@ -176,9 +150,10 @@ body {
 }
 
 .buy-button {
-  background-color: gold;
+  background-color: #865d36;
+  color: white;
 }
 
 .add-to-cart {
-  background-color: silver;
+  background-color: rgba(61, 255, 58, 0.628);
 }
