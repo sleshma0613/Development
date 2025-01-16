@@ -1,41 +1,44 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Times New Roman',  serif;
     font-size: 14px;
     background-color:#F3CA9F;
     margin:0;
     padding:0;
 
 }
+
+
 nav{
-    
-       margin: 0;
+        margin: 0;
         font-size: 0;
         align-items: center;
         width: auto;
         height:50px;
-        justify-content:center;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
         background-color:#f1b17c;
         position: relative;
         border: #000000 2px solid;
         }
 a{
     line-height: 50px;
-   font-size: 15px;
-color:#000000;
-text-align: center;
-z-index: 1;
-text-decoration: none;
-cursor:pointer;
-position: relative;
-padding: 8px 16px;
-transition: color 0.25s;
+    font-size: 18px;
+    color:#000000;
+    text-align: center;
+    z-index: 1;
+    text-decoration: none;
+    cursor:pointer;
+    position: relative;
+    padding: 8px 15px;
+    font-weight: bold;
 
 }
 a::after{
     position: absolute;
     content: "";
     inset: 0;
-    background: rgb(243, 186, 133);
+    background: rgb(243, 161, 85);
     scale:1 0;
     z-index:-1;
     transition: 0.45s;
@@ -51,8 +54,8 @@ header{
  text-align:center;
 }
 h1{
-font-size:40px;
-font-family:'Times New Roman', Times, serif;
+    font-size:40px;
+    font-family:'Times New Roman', Times, serif;
     font-weight:bold;
     font-style:italic;
     text-align: center;
@@ -89,7 +92,7 @@ font-family:'Times New Roman', Times, serif;
     margin-bottom: 20px;
     border-radius: 8px;
 }
-.survey a:hover{color:#ee9827}
+.survey a:hover{color:#ffffff}
 .survey{
     text-align: right;
     font-weight: bold;
