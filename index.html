@@ -28,7 +28,7 @@
         color: gold;
       }
     </style>
-    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body style="
     background-image: url(images/website-background.jpg);
@@ -58,9 +58,46 @@
         <button class="prev-slide">&#11164;</button>
       </div> -->
 
-      <video width="100%" autoplay loop>
-        <source src="images/watches/1920x600.mp4" type="video/mp4">
+      <video width="100%" autoplay loop muted style="pointer-events: none;">
+        <source src="images/watches/landing.mp4" type="video/mp4">
       </video>
+    </div>
+
+    <div class="intro">
+      <div class="brief-intro" style="
+          font-family: serif;
+          font-size: 26px;
+          font-weight: 600;
+          margin: 30px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        ">
+        <p style="
+          width: 530px;
+        ">
+          Welcome to <strong>Nova Times</strong>, where timeless elegance meets modern craftsmanship. Guided by our slogan, <italic>Where Luxury Meets Precision</italic>, we bring you a curated selection of vintage-style and gold watches that exude sophistication and charm. Whether you're seeking a statement piece or a daily accessory, our collection combines classic aesthetics with unparalleled quality, ensuring every moment is extraordinary. Explore Nova Times and discover watches that stand the test of time.
+        </p>
+        <img src="images/slide1.jpg" height="350px" style="border-radius: 8px;">
+      </div>
+
+      <div class="brief-history" style="
+        font-family: serif;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      ">
+        <img src="images/slide2.jpg" height="350px" style="margin-top: 100px; border-radius: 8px;">
+        <div style="
+          width: 600px;
+        ">
+          <h2>HOW WE STARTED</h2>
+          Nova Times began with a simple yet profound passion for timeless craftsmanship and vintage elegance. Our founders, lifelong enthusiasts of classic watchmaking, envisioned a brand that celebrates the artistry and precision of traditional timepieces while catering to modern tastes. Starting as a small boutique dedicated to sourcing rare, vintage-inspired designs, we grew through an unwavering commitment to quality and a deep appreciation for the stories behind each watch. Today, Nova Times stands as a testament to that vision, offering a collection that blends heritage with luxury, bringing our love for exceptional timekeeping to your wrist.
+        </>
+      </div>
     </div>
     
     <section class="highlights">
@@ -70,6 +107,6 @@
       </div>
     </section>
     <section class="categories categories-js"></section>
-    <script src="scripts/homepage.js" type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
   </body>
 </html>
