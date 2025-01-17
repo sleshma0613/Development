@@ -9,11 +9,20 @@
 	<meta name="keywords" content="HTML,meta tags,form">
     
     <link rel="stylesheet" href="../styles/login.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <script>
-        function showAlert(){
-            alert("YOU HAVE SUCCESSFULLY LOGGED IN ")
+        function validateForm(){
+            const username = document.forms["login form"]["username"].value;
+            const password=document.forms["login form"]["password"].value;
+            if(username==="" || password===""){
+                alert("please fill in the fields");
+                return false;// submission fails
+            }
+            else{
+            alert("YOU HAVE SUCCESSFULLY LOGGED IN ");
+            return true;//logs in
         }
+    }
     </script>
 
 
@@ -28,7 +37,7 @@
             
             
         <input type="username" class="input-field" placeholder="Enter your username  " required>
-        <i class='bx bx-user-circle' ></i>
+        
        
         <br>
         <br
@@ -37,14 +46,14 @@
         
     
         <input type="password" class="input-field" placeholder="Enter Password " required>
-        <i class='bx bx-hide' ></i>
+        
         </div>
         <div class="forgot">
             <a href="#">Forgot password</a>
         </div>
         <br>
        
-        <button type="submit" onclick="showAlert()">Login</button>
+        <button type="submit" onclick="validateForm()">Login</button>
     
         <br>
         <br>
