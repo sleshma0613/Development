@@ -104,8 +104,8 @@ function prevSlide() {
 
 document.querySelector(".next-slide").addEventListener('click', () => {
   nextSlide();
-})
+});
 
 document.querySelector(".prev-slide").addEventListener('click', () => {
   prevSlide();
-})
+});
