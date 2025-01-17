@@ -8,17 +8,19 @@ body {
 }
 
 
-.navbar {
-    background-color: rgba(166, 144, 128, 0.696);
-    height: 62px;
-    display: flex;
-    align-items: center;
-    
-    justify-content:center;
-    
-    font-size: 21px;
-    font-family: serif;
+nav a {
+    color: #bd8334;
+    text-decoration: none;
+  
+  }
+  .company-logo{
+    width: 200px;
+  }
+  .logo-container{
+    position: relative;
+    overflow: hidden;
 }
+
 a {
     text-decoration: none;
     font-family: serif;
@@ -48,10 +50,6 @@ color: gold;
     
 }
 
-.company-logo {
-    width: 50px;
-    border-radius: 100%;
-  }
 
   
 
