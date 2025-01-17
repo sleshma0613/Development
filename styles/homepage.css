@@ -28,7 +28,7 @@ body {
 .slideshow {
   width: 100%;
   position: relative;
-  height: 440px;
+  height: 390px;
 }
 
 .next-slide, .prev-slide {
@@ -85,6 +85,7 @@ body {
   border-radius: 8px;
   color: black;
   cursor: pointer;
+  height: 170px;
 }
 
 .featured-product:hover {
@@ -95,7 +96,8 @@ body {
 .product-image {
   object-fit: cover;
   border-radius: 8px;
-  width: 300px;
+  width: 170px;
+  height: 170px;
 }
 
 .product-name {
@@ -109,11 +111,6 @@ body {
 
 .product-description {
   margin-top: 10px;
-}
-
-.fproduct-image-container {
-  display: flex;
-  height: 200px;
 }
 
 .fproduct-info {
