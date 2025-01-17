@@ -11,7 +11,7 @@ let products = [
     product_name : "Omega Speedmaster Pilot",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
-    product_image: "../images/watches/rolex-bubble-back.jpg"
+    product_image: "../images/watches/patek-philippe-calatrava.jpg"
   },
   {
     product_id : "1",
