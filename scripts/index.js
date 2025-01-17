@@ -1,4 +1,4 @@
-let products = [
+let featuredProducts = [
   {
     product_id : "1",
     product_name : "Omega Speedmaster Pilot",
@@ -24,10 +24,10 @@ let products = [
 
 function renderFeaturedProducts() {
   const productElement = document.querySelector(".featured-catalogue-js");
-  for (let i = 0; i <= products.length - 1; i++) {
+  for (let i = 0; i <= featuredProducts.length - 1; i++) {
     productElement.innerHTML += `
     <div class="featured-product">
-      <img class="product-image" src=${products[i].product_image}>
+      <img class="product-image" src=${featuredProducts[i].product_image}>
     </div>
   `
   }
