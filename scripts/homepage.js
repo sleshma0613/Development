@@ -72,6 +72,11 @@ function renderFeaturedProducts() {
       <div class="fproduct-image-container">
         <img class="product-image" src=${products[i].product_image}>
       </div>
+      <div class="fproduct-info">
+        <div class="product-name">${products[i].product_name}</div>
+        <div class="product-price">${products[i].product_price}</div>
+        <div class="product-description">${products[i].product_description}</div>
+      </div>
     </div>
   `
   }
