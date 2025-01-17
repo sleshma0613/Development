@@ -1,14 +1,9 @@
 body{
-    background-image:url(../images/W3.jpg);
+    background-color:#9cb1df;
     font-family: sans-serif;
-    min-height:100vh; /*100% of the viewport height*/
     padding:20px;
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
     align-items: center;
     margin:0;
-    padding:0;
     color:#000000;
     margin-inline:450px;
     
@@ -16,43 +11,49 @@ body{
     
     h1{
         font-size: 40px;
-        font-family:'Times New Roman', Times, serif;
+        font-family:'Times New Roman',serif;
         font-weight:bold;
         font-style:italic;
        text-align: center;
-        margin:auto;
+        background-color:#eeba7e;
+        margin:0;
         
     }
     h2{
         font-size: 15px;
-        font-family:'Times New Roman', Times, serif;
-        margin:auto;
+        font-family:'Times New Roman',serif;
+        background-color:#eeba7e;
         text-align: center;
         
     }
     .form-container{
         width:500px;
         padding:20px;
-        text-align: left;
-        background-color: rgba(245, 238, 242, 0.9);
+        
+        background-color: rgb(255, 255, 255);
+        
+        border-radius:8px;
+        margin: auto;
     }
     label{
-        display: block;
-        font-size: 15px;
-        margin-bottom:10px 0 5px;
+        
+        margin-top: 10px;
+        
+    }
     
-    }
-    .form-group{
-        margin-bottom:10px;
-    }
     *{
         box-sizing:border-box;
         margin:0;
         padding:0;
     }
-    input, textarea, select{
-        width: 80%;
-        padding:10px;
+    input[type="text"],input[type="email"] ,input[type="number"],
+    textarea, select{
+        width: 100%;
+        height:auto;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border:1px solid #000000;
        display: inline-block;
 
     }
@@ -63,27 +64,33 @@ body{
     
 
     button:hover{
-    background-color: #f599bc;
-    color: #ffffff;
+    background-color: #cc3232;
     cursor: pointer;
-    opacity: 1;
+    
     
     }
     button{
-        padding:8px;
+        padding:10px 15px;
         text-align: center;
         border:2px;
-        width: 100px;
-        background-color:rgb(236, 177, 128);
+        width: 50%;
+        margin-inline:110px ;
+        background-color:#d3923c;
         font-weight:bold;
+        color: #ffffff;
     }
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    input[type=radio]{
-        margin-right: 5px;
-    }
-   
+    
+   a{
+    text-align:center;
+    justify-content:center;
+    background-color: #9260ca;
+    padding:8px;
+    margin-top: 10px;
+    text-decoration: none;
+    color:#ffffff;
+    width:fit-content;
+    border-radius:8px;
+    display: block;
+    
+   }
+   a:hover{color:#000000}
