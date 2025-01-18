@@ -112,7 +112,7 @@ function renderFeaturedProducts() {
     <div class="featured-product">
       <img class = "product-image" src = ${featuredProducts[i].product_image}>
       <div class="product-details-layer">
-
+        SOME PRODUCT RELATED STUFF
       </div>
     </div>
   `
@@ -126,7 +126,7 @@ function renderProducts() {
     <div class="product-container">
       <img class = "product-image" src = ${products[i].product_image}>
       <div class="product-details-layer">
-
+        SOME PRODUCT RELATED STUFF
       </div>
     </div>
   `
