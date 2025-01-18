@@ -57,7 +57,7 @@ body {
   right: 0;
 }
 
-.featured-heading {
+.featured-heading, .products-heading {
   display: flex;
   height: 60px;
   align-items: center;
@@ -69,14 +69,14 @@ body {
   color: gold;
 }
 
-.featured-catalogue {
+.featured-catalogue, .products-catalogue {
   display: grid;
   margin: 20px 20px;
   row-gap: 17px;
   grid-template-columns: auto auto auto;
 }
 
-.featured-product {
+.featured-product, .product-container {
   font-family: serif;
   display: flex;
   transition: all 0.4s;
@@ -88,7 +88,7 @@ body {
   height: 380px;
 }
 
-.featured-product:hover {
+.featured-product:hover, .product-container:hover {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.797);
   transform: scale(1.011);
 }
