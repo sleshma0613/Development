@@ -108,7 +108,7 @@ nav a {
 
 .featured-catalogue {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 20px 20px;
   row-gap: 17px;
   justify-content: space-between;
