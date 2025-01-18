@@ -126,7 +126,11 @@ function renderProducts() {
     <div class="product-container">
       <img class = "product-image" src = ${products[i].product_image}>
       <div class="product-details-layer">
-        SOME PRODUCT RELATED STUFF
+        <button class="action-button buy-button" onclick="alert('Added To Cart!')">
+          <img src="../images/icons/cart-icon.svg" height="100%" style="
+            object-fit: cover;
+          ">
+        </button>
       </div>
     </div>
   `
