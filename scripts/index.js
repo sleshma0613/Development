@@ -1,21 +1,21 @@
 let featuredProducts = [
   {
-    product_id : "1",
+    product_id : "f1",
     product_name : "Omega Speedmaster Pilot",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
     product_image: "../images/watches/Home_SP_Pilot_KV_Push.avif"
   },
   {
-    product_id : "1",
-    product_name : "Omega Speedmaster Pilot",
+    product_id : "f2",
+    product_name : "Patek Philippe Calatrava",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
     product_image: "../images/watches/patek-philippe-calatrava.jpg"
   },
   {
-    product_id : "1",
-    product_name : "Omega Speedmaster Pilot",
+    product_id : "f3",
+    product_name : "Shein - Vintage Water Resistant Polygon Pointer Quartz Watch",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
     product_image: "../images/W1.jpg"
@@ -23,17 +23,24 @@ let featuredProducts = [
 ];
 
 function renderFeaturedProducts() {
-  const productElement = document.querySelector(".featured-catalogue-js");
+  const featuredProductElement = document.querySelector(".featured-catalogue-js");
   for (let i = 0; i <= featuredProducts.length - 1; i++) {
-    productElement.innerHTML += `
+    featuredProductElement.innerHTML += `
     <div class="featured-product">
-      <img class="product-image" src=${featuredProducts[i].product_image}>
+      <img class = "product-image" src = ${featuredProducts[i].product_image} style = "z-index: 1">
+      <div class="product-details-layer">
+        
+      </div>
     </div>
   `
   }
-}
+};
 
 renderFeaturedProducts();
+
+function showProductDetails() {
+  
+};
 
 // let slideImageElement = document.querySelector(".slide-image");
 // let imageIndex = 1;
