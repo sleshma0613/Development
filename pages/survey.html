@@ -12,16 +12,19 @@
 </head>
 
 <body>
-    <form id="surveyForm" action="#" method="post">
+    <div class="container">
+        <form name="surveyForm" onsubmit="return validateForm()">
 
-        <div class="form-container">
-            <h1>Survey Form</h1>
-            <h2>Please fill the form below:</h2>
+            <div class="form-container">
+                <h1>Survey Form</h1>
+                <h2>Please fill the form below:</h2><br>
 
                 <label for="name"><b>Name: </label></b>
                 <input type="text" id="name" name="name" placeholder="Ray" required><br>
+
                 <label for="email"><b>Email: </label></b>
                 <input type="email" id="email" name="email" placeholder="ray05@gmail.com" required><br>
+
                 <label for="age"><b>Age: </label></b>
                 <input type="number" id="age" name="age" min="18" max="80" placeholder="22" required><br>
 
@@ -34,7 +37,7 @@
                 <label for="others">Others</label><br><br>
 
 
-                <label for="watchtype"><b>Select watch type you are interested:</label></b><br>
+                <label for="watchtype"><b>Select the watch type you are interested:</label></b><br>
                 <select id="watchtype" name="watchtype" required>
                     <option value="">Select</option>
                     <option value="vintage">Vintage</option>
@@ -45,7 +48,8 @@
                     <option value="chronograph">Chronograph</option>
                     <option value="quartz">Quartz</option>
                     <option value="analog">Analog</option>
-                </select>
+                </select><br>
+
                 <label for="media"><b>How did you find our website?</label></b>
                 <div class="checkbox-container">
                     <input type="checkbox" id="tiktok" name="media" value="TikTok">
@@ -56,36 +60,36 @@
                     <label for="facebook">Facebook</label><br>
                     <input type="checkbox" id="reddit" name="media" value="Reddit">
                     <label for="reddit">Reddit</label><br>
-                    <input type="checkbox" id="friends" name="media" value="Friends">
+                    <input type="checkbox" id="friends" name="media" value="Friends" title="Friends">
                     <label for="friends">Friends</label><br>
-                    <input type="checkbox" id="others" name="media" value="Others">
-                    <label type="others">Others</label><br><br>
+                    <input type="checkbox" id="others-checkbox" name="media" value="Others" title="Others">
+                    <label type="others-checkbox">Others</label><br><br>
                 </div>
-                </select>
+
 
                 <label for=comment><b>Any comments or suggestions: </label></b><br>
-                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comments here..."
+                <textarea id="comment" name="comment" rows="8" cols="50" placeholder="Enter your comments here..."
                     required></textarea><br><br>
 
                 <button type="submit">Submit</button> <!--submit button to submit the form-->
-            </form>
-        </div>
+
+            </div>
+    </div>
+    </form>
+
+    <div> <!--linking the blog page in the survey form page-->
+        <a href="blog.html">Back to Blog</a>
+
+        <!--this is a footer and copyright of this website-->
+
+        <footer style="text-align: center">
+            <p><b>&copy;NovaTime 2025</p></b>
+        </footer>
+    </div>
+
+    <script src="validation.js"></script><!--link for external javascript-->
 
 
-        <div>
-            <script src="../scripts/validation.js"></script><!--link for external javascript-->
-
-        </div>
-
-        <div> <!--linking the blog page in the survey form page-->
-            <a href="blog.html">Back to Blog</a>
-
-            <!--this is a footer and copyright of this website-->
-
-            <footer>
-                <p align="center"><b>&copy;NovaTime 2025</p></b>
-            </footer>
-        </div>
 </body>
 
 </html>
