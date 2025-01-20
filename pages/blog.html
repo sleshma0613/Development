@@ -32,7 +32,7 @@
 
 </head>
 
-<body><!--inline css-->
+<body><!--inline css for navigation bar-->
 
     <nav style="
        background-color:rgba(40,40,42,255);
@@ -42,9 +42,9 @@
         align-items: center;
         justify-content: space-between;
       ">
-      <a class="logo-container" href="#">
-        <img class="company-logo" src="../images/logo.png">
-      </a>
+        <a class="logo-container" href="#">
+            <img class="company-logo" src="../images/logo.png">
+        </a>
         <a href="../pages/h2.html">HOME</a>
         <a href="../pages/products.html">PRODUCTS</a>
         <a href="../pages/blog.html">BLOG</a>
@@ -59,7 +59,7 @@
     <h2>Recent blog posts</h2>
 
     <div class="container">
-
+        <!--main content of the page-->
         <div class="content">
             <h1>Why the Vintage?</h1>
             <p>Vintage watches have a charm that smart watches cannot replicate. The vintage watches are never out of
@@ -70,24 +70,63 @@
         </div>
     </div>
 
-    <div class="card">
-        <img src="../images/rolexkoCeo.jpg" alt="Ceo of Rolex" class="card-img">
-        <div class="card-content">
-            <h3>Interview with Rolex Ceo Mr.Dufour</h3>
-        </div>
-    </div>
 
-    <div class="survey-form">
 
-        <a href="../pages/survey.html" target="_blank">Survey Form</a>
-    </div>
+    <!--this is a footer and copyright of the page-->
+    <footer class="footer">
+        <table class="footer-table">
+            <tr>
+                <td>
+                    <div class="footer-start">
+                        <h3>NovaTime</h3>
+                        <p>Discover the finest collection for vintage watches. The design
+                            which is timeless and is for every occasion. We do the searching. You do the styling.</p>
+                    </div>
+                </td>
 
-    <!--this is a footer and copyright of this website-->
-    <div class="footer-content">
-        <footer>
-            <p align="center"><b>All Rights Reserved. &copy;NovaTime 2025</p></b>
-        </footer>
-    </div>
+                <td>
+                    <h3>Follow Us</h3>
+                    <div class="sns">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+                        <a href="https://www.x.com" target="_blank">
+                            <img src="../images/icons8-x-logo-50.png" alt="X"></a>
+                    </div>
+                </td>
+                <td>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="h2.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </td>
+
+                <td>
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+                <td colspan="3" class="footer-end">
+                    <p align="center"><b> &copy;NovaTime 2025. All Rights Reserved.</p></b>
+                </td>
+            </tr>
+    </footer>
+    </table>
 </body>
 
 </html>
