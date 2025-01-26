@@ -4,21 +4,21 @@ let featuredProducts = [
     product_name : "Omega Speedmaster Pilot",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
-    product_image: "../images/watches/Home_SP_Pilot_KV_Push.avif"
+    product_image: "images/watches/Home_SP_Pilot_KV_Push.avif"
   },
   {
     product_id : "f2",
     product_name : "Patek Philippe Calatrava",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
-    product_image: "../images/watches/patek-philippe-calatrava.jpg"
+    product_image: "images/watches/patek-philippe-calatrava.jpg"
   },
   {
     product_id : "f3",
     product_name : "Shein - Vintage Water Resistant Polygon Pointer Quartz Watch",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
-    product_image: "../images/W1.jpg"
+    product_image: "images/W1.jpg"
   }
 ];
 
@@ -112,7 +112,15 @@ function renderFeaturedProducts() {
     <div class="featured-product">
       <img class = "product-image" src = ${featuredProducts[i].product_image}>
       <div class="product-details-layer">
-        SOME PRODUCT RELATED STUFF
+        <button class="action-button buy-button" style="
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        " onclick="alert('Added To Cart!')">
+          <img src="../images/icons/cart-icon.svg" height="100%" style="
+            object-fit: cover;
+          ">
+        </button>
       </div>
     </div>
   `
@@ -126,7 +134,11 @@ function renderProducts() {
     <div class="product-container">
       <img class = "product-image" src = ${products[i].product_image}>
       <div class="product-details-layer">
-        <button class="action-button buy-button" onclick="alert('Added To Cart!')">
+        <button class="action-button buy-button" style="
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        " onclick="alert('Added To Cart!')">
           <img src="../images/icons/cart-icon.svg" height="100%" style="
             object-fit: cover;
           ">
