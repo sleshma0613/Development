@@ -83,7 +83,7 @@ header h1{
     font-weight: lighter;
     font-style: italic;
     text-align: center;
-    margin-top: 20px; /*space between header and content*/
+    margin: 10px; /*space between header and content*/
     color:#e97451;
     padding:8px;
     letter-spacing:2px; /*space between letters*/
@@ -93,7 +93,8 @@ header h2{
     font-size: 23px;
     font-family: serif;
     background-color: #ad53374d;
-    width:200px;
+    width:100%;
+    padding:8px;
     text-align: center;
     text-shadow:2px 2px 2px #fffcfc;
 }
@@ -107,7 +108,7 @@ header h2{
 }
 .content {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.068);
+    background-color: rgba(255, 255, 255, 0.397);
     font-size: 10px;
     border-radius: 8px;
    
@@ -116,33 +117,31 @@ header h2{
     font-size: 30px;
     font-style:normal;
     color: #b87333;
-    margin: 10px 10px;
+    margin: 10px;
 }
 .content p{
     font-size: 20px;
-    margin: 10px 10px;
+    margin: 10px;
 }
 .container2{
     display: flex;
     margin-top: 10px;
     flex:1;
-    background-color: rgba(0, 0, 0, 0.068);
+    background-color: rgba(255, 255, 255, 0.397);
 }
 .content1 h1{
     font-size: 30px;
     font-style:normal;
     color: #b87333;
-    margin: 10px 10px;
+    margin: 10px;
    
 }
 .content1 p{
     font-size: 20px;
-    margin: 10px 10px;
+    margin: 20px;
 }
 .content1{
     font-size: 20px;
-    border-radius: 8px;
-    
 }
 .content1 img{
     width: 85%;
@@ -153,27 +152,35 @@ header h2{
     
 }
 .content2 h1{
-    font-size: 25px;
+    font-size: 24px;
     font-style:normal;
     color: #b87333;
-    margin: 20px 20px;
+    margin: 20px;
+    text-align: center;
 }
 .content2 h2{
     font-size: 20px;
-    font-style:italic;
-    margin:20px 20px;
     color: #020100;
-    margin: 20px 10px;
+    margin: 10px;
 }
 .content2 p{
     font-size: 18px;
-    margin:10px 10px;
+    margin:20px;
    
+}
+.content2 img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin:10px;
+    
 }
 .content2{
     font-size: 20px;
     border-radius: 8px;
-   
+    padding: 10px;
+    margin:0;
 }
 /*footer style*/
 .footer{
