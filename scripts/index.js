@@ -117,7 +117,7 @@ function renderFeaturedProducts() {
           bottom: 0;
           right: 0;
         " onclick="alert('Added To Cart!')">
-          <img src="../images/icons/cart-icon.svg" height="100%" style="
+          <img src="images/icons/cart-icon.svg" height="100%" style="
             object-fit: cover;
           ">
         </button>
