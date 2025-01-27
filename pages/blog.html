@@ -9,6 +9,7 @@
     <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
     <title>Blog Page</title>
     <link rel="stylesheet" href="../styles/style.css"><!--link for external css-->
+    <!--internal css-->
     <style>
         a {
             text-decoration: none;
@@ -32,7 +33,8 @@
 
 </head>
 
-<body><!--inline css for navigation bar-->
+<body>
+    <!--inline css for navigation bar-->
 
     <nav style="
        background-color:rgba(40,40,42,255);
@@ -45,6 +47,9 @@
         <a class="logo-container" href="#">
             <img class="company-logo" src="../images/logo.png">
         </a>
+        <a class="logo-container" href="#">
+            <img class="company-logo" src="../images/logo.png">
+        </a>
         <a href="../index.html">HOME</a>
         <a href="../pages/products.html">PRODUCTS</a>
         <a href="../pages/blog.html">BLOG</a>
@@ -52,56 +57,93 @@
         <a href="../pages/aboutus.html">ABOUT US</a>
     </nav>
 
-    <!--header tag-->
-    <header>
-        <h1>My Blog</h1>
-    </header>
-    <h2>Recent blog posts</h2>
 
     <div class="container">
+        <header>
+            <h1>My Blog</h1>
+        </header>
+        <h2>Recent blog posts</h2>
         <!--main content of the page-->
         <div class="content">
             <h1>Why the Vintage?</h1>
-            <img src="../images/w8.jpg" alt="watch">
+            <img src="../images/gold-watches-1.jpg" alt="vintage watch">
             <p>In an era dominated by smartwatches, vintage timepieces serve as quiet narrators of artistry, heritage
                 and
                 individual talent. Vintage watches have a charm that smart watches cannot replicate. The vintage watches
                 are never out of
                 fashion. It embodies a sense of history that reflects decades of design advancements and human
-                creativity.
-                Every watch conveys a distinct story, symbolizing a particular period of design and process. Vintage
-                watches embodies reliable fashion which
-                are smoothly designed items that can endure generations.
+                creativity. Every watch conveys a distinct story, symbolizing a particular period of design and process.
+                Vintage
+                watches embodies reliable fashion which are smoothly designed items that can endure generations.
 
             </p>
         </div>
     </div>
 
+    <div class="container2">
+        <div class="content1">
+            <h1>The Growth of Smartwatches</h1>
+            <img src="../images/w0.jpg" alt="gold watch">
+            <p>The launch of smartwatches transformed the watch industry. What started as a specialized item has now
+                evolved
+                into a leading category, merging classics with modern technologies such as fitness tracking,
+                alerts and health monitoring. Prominent companies such as Apple and Samsung have established a new
+                benchmark, turning smartwatches
+                into an essential part of contemporary living.
+            </p>
+            <h1>Merging Analog with Innovation</h1>
+            <img src="../images/wp5.webp" alt="vintage watch with innovation">
+            <p>As smartwatches become more popular, conventional watchmakers are adopting technology to stay
+                significant. Brands such as TAG Heuer and Montblanc
+                have launched hybrid watches that merge analog aesthetics with smart features. This method attracts
+                costumers who appreciate
+                analog yet wish to enjoy the benefits of modern technology.</p>
+        </div>
+        <div class="content2">
+            <h1>What You Can Discover Here</h1>
+            <ol type="1">
+                <li>
+                    <h2>Motivation for your Vintage Lifestyle</h2>
+                    <p>We have suggestion and advice to help you become creative, whether you are organizing a vintage
+                        themed event, styling your clothes or decorating your room.</p>
+                </li>
+                <li>
+                    <h2>Selected Discoveries</h2>
+                    <p>Find the chosen pieces carefully that perfectly contain authentic vintage elegance. Every item is
+                        chosen with care and guarantee quality and originality. </p>
+                </li>
+                <li>
+                    <h2>Past Stories</h2>
+                    <p>Explore intriguing stories about the culture, history and fashion that influenced the vintage
+                        industry.</p>
+                </li>
 
+            </ol>
+        </div>
+    </div>
+    <a href="#" class="back-to-top" style="
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    justify-content: right;
+    ">Back to Top</a>
 
     <!--this is a footer and copyright of the page-->
     <footer class="footer">
         <table class="footer-table">
             <tr>
-                <td>
-                    <div class="footer-start">
-                        <p>Discover the finest collection for vintage watches. The design
-                            which is timeless and is for every occasion. We do the searching. You do the styling.</p>
-                    </div>
-                </td>
-
-                <td>
-                    <h3>Follow Us</h3>
-                    <div class="sns">
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
-                        <a href="https://www.youtube.com" target="_blank">
-                            <img src="../images/YouTube-icon.png" alt="Youtube"></a>
-                        <a href="https://www.x.com" target="_blank">
-                            <img src="../images/icons8-x-logo-50.png" alt="X"></a>
-                    </div>
+                <h3>Follow Us</h3>
+                <div class="sns">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="../images/YouTube-icon.png" alt="Youtube"></a>
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="../images/icons8-x-logo-50.png" alt="X"></a>
+                </div>
                 </td>
                 <td>
                     <h3>Quick Links</h3>
@@ -130,12 +172,13 @@
 
 
             <tr>
-                <td colspan="3" class="footer-end">
+                <td class="footer-end">
                     <p align="center"><b> &copy;NovaTime 2025. All Rights Reserved.</p></b>
                 </td>
             </tr>
+
+        </table>
     </footer>
-    </table>
 </body>
 
 </html>
