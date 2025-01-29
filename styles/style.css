@@ -1,9 +1,4 @@
-/*Global Style*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 body {
     font-family: serif;
     font-size: 14px;
@@ -77,7 +72,7 @@ a:hover{
     color:rgb(255, 255, 255);
 }
 /*heading style*/
-header h1{
+.blog-head h1{
     font-size:50px;
     font-family: serif;
     font-weight: lighter;
@@ -89,12 +84,12 @@ header h1{
     letter-spacing:2px; /*space between letters*/
     text-shadow: 2px 2px 2px #f5eeee; /*subtle shadow effect*/
 }
-header h2{
+.blog-head h2{
     font-size: 23px;
     font-family: serif;
     background-color: #ad53374d;
     width:100%;
-    padding:8px;
+    margin: 0;
     text-align: center;
     text-shadow:2px 2px 2px #fffcfc;
 }
@@ -218,19 +213,13 @@ header h2{
 }
 
 .sns{
-   gap:10px;
    display: flex;
-   justify-content: left;
+   justify-content: flex-end;
    text-align: left;
 }
 .sns a, .sns img{
     margin: 0;
     padding: 0;
-}
-.footer h3{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: serif;
 }
 
 
