@@ -6,8 +6,9 @@ body {
 }
 
 .company-logo {
-  width: 50px;
+  width: 130px;
   border-radius: 100%;
+  object-fit: cover;
 }
 
 .login-button {
