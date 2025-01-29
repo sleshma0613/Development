@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nova Times</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="E-Commerce Website For Watches">
+    <meta name="keywords" content="watch, classic, smart">
+    <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      a {
+        text-decoration: none;
+        font-family: serif;
+        color: black;
+        font-size: 21px;
+        font-weight: 500;
+        flex: 1;
+        transition: color 0.44s;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:hover {
+        color: gold;
+      }
+    </style>
+    <link rel="stylesheet" href="">
+  </head>
+  <body onload="renderFeaturedProducts();" style="
+    background-image: url(images/website-background.jpg);
+  ">
+    <nav style="
+        background-color: rgba(166, 144, 128, 0.696);
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      ">
+      <a class="logo-container" href="#">
+        <img class="company-logo" src="images/logo.png">
+      </a>
+      <a href="index.html">HOME</a>
+      <a href="pages/products.html">PRODUCTS</a>
+      <a href="pages/blog.html">BLOG</a>
+      <a href="pages/research.html">RESEARCH</a>
+      <a href="pages/aboutus.html">ABOUT US</a>
+      <a href="pages/form.html"><button class="login-button">Login</button></a>
+    </nav>
+
+    <div class="slideshow">
+      <!-- <div class="slides slides-js" style="opacity: 1;">
+        <img class="slide-image" src="images/slide1.jpg" width="100%" height="440px" style="object-fit: cover;">
+        <button class="next-slide">&#11166;</button>
+        <button class="prev-slide">&#11164;</button>
+      </div> -->
+
+      <video width="100%" autoplay loop muted style="pointer-events: none;">
+        <source src="images/watches/landing.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="intro">
+      <div class="brief-intro" style="
+          font-family: serif;
+          font-size: 26px;
+          font-weight: 600;
+          margin: 30px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        ">
+        <p style="
+          width: 530px;
+        ">
+          Welcome to <strong>Nova Times</strong>, where timeless elegance meets modern craftsmanship. Guided by our slogan, <italic>Where Luxury Meets Precision</italic>, we bring you a curated selection of vintage-style and gold watches that exude sophistication and charm. Whether you're seeking a statement piece or a daily accessory, our collection combines classic aesthetics with unparalleled quality, ensuring every moment is extraordinary. Explore Nova Times and discover watches that stand the test of time.
+        </p>
+        <img src="images/slide1.jpg" height="350px" style="border-radius: 8px;">
+      </div>
+
+      <div class="brief-history" style="
+        font-family: serif;
+        font-size: 26px;
+        font-weight: 600;
+        margin: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      ">
+        <img src="images/slide2.jpg" height="350px" style="margin-top: 100px; border-radius: 8px;">
+        <div style="
+          width: 600px;
+        ">
+          <h2>HOW WE STARTED</h2>
+          Nova Times began with a simple yet profound passion for timeless craftsmanship and vintage elegance. Our founders, lifelong enthusiasts of classic watchmaking, envisioned a brand that celebrates the artistry and precision of traditional timepieces while catering to modern tastes. Starting as a small boutique dedicated to sourcing rare, vintage-inspired designs, we grew through an unwavering commitment to quality and a deep appreciation for the stories behind each watch. Today, Nova Times stands as a testament to that vision, offering a collection that blends heritage with luxury, bringing our love for exceptional timekeeping to your wrist.
+        </div>
+      </div>
+    </div>
+    
+    <section class="highlights">
+      <div class="featured-collection">
+        <div class="featured-heading">FEATURED COLLECTION</div>
+        <div class="featured-catalogue featured-catalogue-js"></div>
+      </div>
+    </section>
+
+    <footer style="
+      text-align: center;
+    ">
+      All Rights Reserved. &copy; NovaTimes 2025.
+    </footer>
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>
