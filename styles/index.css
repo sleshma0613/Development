@@ -19,11 +19,11 @@ body {
   cursor: pointer;
   font-size: 21px;
   font-weight: 500;
-  color: white;
+  color: gold;
 }
 
 .login-button:hover {
-  color: gold;
+  color: white;
 }
 
 .slideshow {
