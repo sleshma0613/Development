@@ -78,99 +78,113 @@ a:hover{
 }
 /*heading style*/
 header h1{
-    font-size:45px;
-    font-family:'Times New Roman', serif;
-    font-weight: bold;
+    font-size:50px;
+    font-family: serif;
+    font-weight: lighter;
     font-style: italic;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 10px; /*space between header and content*/
     color:#e97451;
-    padding: 20px;
-    
+    padding:8px;
+    letter-spacing:2px; /*space between letters*/
+    text-shadow: 2px 2px 2px #f5eeee; /*subtle shadow effect*/
 }
-
+header h2{
+    font-size: 23px;
+    font-family: serif;
+    background-color: #ad53374d;
+    width:100%;
+    padding:8px;
+    text-align: center;
+    text-shadow:2px 2px 2px #fffcfc;
+}
+/*container style*/
 .container img{
     width: 100%;
     height: 400px;
-    border-radius: 5px;
-    
-    object-fit: cover;
-    margin: 0 auto; /* Center the image */
-}
-.container img{
-    width: 100%;
-    height: 300px;
     border-radius: 8px;
     object-fit: cover;
+    
 }
 .content {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.068);
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.397);
     font-size: 10px;
-    margin-bottom: 20px;
     border-radius: 8px;
+   
 }
 .content h1{
     font-size: 30px;
     font-style:normal;
     color: #b87333;
+    margin: 10px;
 }
 .content p{
-    font-size: 18px;
+    font-size: 20px;
+    margin: 10px;
 }
 .container2{
     display: flex;
     margin-top: 10px;
-    flex:50%;
-    flex:50%;
-    background-color: rgba(0, 0, 0, 0.068);
+    flex:1;
+    background-color: rgba(255, 255, 255, 0.397);
 }
 .content1 h1{
     font-size: 30px;
     font-style:normal;
     color: #b87333;
+    margin: 10px;
+   
 }
 .content1 p{
-    font-size: 18px;
+    font-size: 20px;
+    margin: 20px;
 }
 .content1{
-    padding: 10px;
     font-size: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    
 }
 .content1 img{
     width: 85%;
-    height: 300px;
+    height: 400px;
     border-radius: 5px;
     object-fit: cover;
+    margin:10px;
     
 }
 .content2 h1{
-    font-size: 25px;
+    font-size: 24px;
     font-style:normal;
     color: #b87333;
-    
+    margin: 20px;
+    text-align: center;
 }
 .content2 h2{
-    font-size: 18px;
-    font-style:normal;
+    font-size: 20px;
+    color: #020100;
+    margin: 10px;
 }
 .content2 p{
-    font-size: 15px;
+    font-size: 18px;
+    margin:20px;
+   
+}
+.content2 img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin:10px;
+    
 }
 .content2{
-    padding: 10px;
     font-size: 20px;
-    margin-bottom: 20px;
     border-radius: 8px;
-   
+    padding: 10px;
+    margin:0;
 }
 /*footer style*/
 .footer{
-    padding: 0;
-    text-align: left;
+    text-align: center;
     margin: 0;
     background-color: #b4743f;
     display: flex;
@@ -179,21 +193,20 @@ header h1{
 .footer-table{
     width: 100%;
     margin: 0;
-    border-collapse: collapse;
+    padding: 0;
 
 }
-.footer-table h3{
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-}
+
 .footer-table p{
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: serif;
+    text-align: center;
 }
 .footer-table td{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     vertical-align: top;
+    padding: 10px;
+    font-weight: bold;
 }
 .footer-table ul{
     list-style: none;
@@ -203,17 +216,12 @@ header h1{
 .footer-table ul li{
     margin-bottom: 10px;
 }
-.footer-end{
-    text-align:center;
-    padding-top: 30px;
-    font-size: 14px;
-}
+
 .sns{
-   gap: 10px;
-  display: flex;
-  justify-content: center;
-   padding: 0;
-   margin: 0;
+   gap:10px;
+   display: flex;
+   justify-content: left;
+   text-align: left;
 }
 .sns a, .sns img{
     margin: 0;
@@ -222,7 +230,7 @@ header h1{
 .footer h3{
     font-size: 20px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: serif;
 }
 
 
