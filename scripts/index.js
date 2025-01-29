@@ -25,7 +25,7 @@ let featuredProducts = [
 let products = [
   {
     product_id : "1",
-    product_category : "",
+    product_category : "male",
     product_name : "Omega Speedmaster Pilot",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -33,7 +33,7 @@ let products = [
   },
   {
     product_id : "2",
-    product_category : "",
+    product_category : "female",
     product_name : "Patek Philippe Calatrava",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -41,7 +41,7 @@ let products = [
   },
   {
     product_id : "3",
-    product_category : "",
+    product_category : "male",
     product_name : "Advisor Vintage",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -49,7 +49,7 @@ let products = [
   },
   {
     product_id : "4",
-    product_category : "",
+    product_category : "unisex",
     product_name : "Bulgari",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -57,7 +57,7 @@ let products = [
   },
   {
     product_id : "5",
-    product_category : "",
+    product_category : "male",
     product_name : "Chopard Happy Sport",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -65,7 +65,7 @@ let products = [
   },
   {
     product_id : "6",
-    product_category : "",
+    product_category : "female",
     product_name : "Jaeger LeCoultre Reverso",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -73,7 +73,7 @@ let products = [
   },
   {
     product_id : "7",
-    product_category : "",
+    product_category : "unisex",
     product_name : "Movado Vintage",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -81,7 +81,7 @@ let products = [
   },
   {
     product_id : "8",
-    product_category : "",
+    product_category : "male",
     product_name : "Rolex Bubble Back",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -89,7 +89,7 @@ let products = [
   },
   {
     product_id : "9",
-    product_category : "",
+    product_category : "male",
     product_name : "Rolex Datejust",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
@@ -97,7 +97,7 @@ let products = [
   },
   {
     product_id : "10",
-    product_category : "",
+    product_category : "female",
     product_name : "Vacheron Constantin Patrimony",
     product_price : "300000 NPR",
     product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
