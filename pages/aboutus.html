@@ -8,27 +8,199 @@
     <meta name="keywords" content="about us">
     <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/aboutUs.css">
+
     <style>
+        /*adding inline css*/
+        body,html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'georgia', serif;
+
+
+        }
+
+        nav a {
+            color: #bd8334;
+            text-decoration: none;
+
+        }
+
+        .company-logo {
+            width: 200px;
+            border-radius: 90%;
+
+
+        }
+
+        .logo-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-links {
+            list-style: none;
+            /* Remove bullet points */
+            display: flex;
+            /* Align items in a row */
+            justify-content: space-between;
+            /* Center the links */
+            align-items: center;
+
+
+
+        }
+
+
+        .login-button {
+            border: none;
+            background: transparent;
+            font-family: serif;
+            height: 100%;
+            cursor: pointer;
+            font-size: 21px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .login-button:hover {
+            color: gold;
+        }
+
+        .nav-links li {
+            margin: 55px;
+            /* Space between links */
+
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            /* Remove underline */
+            color: rgb(11, 11, 11);
+            /* Text color */
+            font-size: 18px;
+            /* Font size */
+            transition: color 0.3s;
+            /* Smooth color transition */
+
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+            /* Change color on hover */
+        }
+
+
+        .grpMemb {
+            text-align: center;
+            margin-top: -700px;
+        }
+
+        .aboutus {
+
+            background-image: url('../images/watchb2.jpg');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            font-size: 25px;
+
+
+        }
+
+
+
+        .content {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            padding: 90px;
+            background-color: rgba(0, 0, 0, 0.337);
+            border-radius: 10px;
+            width: fit-content;
+
+        }
+
+
+
+
+        .about-button {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fcf6f6;
+            padding: 10px 20px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .about-button:hover {
+            color: rgba(186, 186, 228, 0.66);
+            transform: translateY(-3px);
+
+        }
+
+        .members {
+            display: flex;
+            /* Use flexbox for layout */
+            justify-content: center;
+            /* Center the cards */
+            flex-wrap: wrap;
+            /* Allow wrapping to the next line */
+            gap: 20px;
+            margin-top: none;
+        }
+
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+
+            transition: transform 0.2s;
+            cursor: pointer;
+            /* Change cursor to pointer */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
         a {
-          text-decoration: none;
-          font-family: serif;
-          color: black;
-          font-size: 21px;
-          font-weight: 500;
-          flex: 1;
-          transition: color 0.44s;
-          text-align: center;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+            text-decoration: none;
+            font-family: serif;
+            color: black;
+            font-size: 21px;
+            font-weight: 500;
+            flex: 1;
+            transition: color 0.44s;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-  
+
         a:hover {
-          color: gold;
+            color: gold;
         }
-        
+
         .footer {
             text-align: center;
             margin: 0;
@@ -36,52 +208,61 @@
             display: flex;
             width: 100%;
         }
+
         .footer-table {
             width: 100%;
             margin: 0;
             padding: 0;
         }
+
         .footer-table p {
             font-size: 15px;
             font-family: serif;
             text-align: center;
         }
+
         .footer-table td {
             margin-bottom: 10px;
             vertical-align: top;
             padding: 10px;
             font-weight: bold;
         }
+
         .footer-table ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
+
         .footer-table ul li {
             margin-bottom: 10px;
         }
+
         .sns {
             gap: 10px;
             display: flex;
             justify-content: left;
             text-align: left;
         }
-        .sns a, .sns img {
+
+        .sns a,
+        .sns img {
             margin: 0;
             padding: 0;
         }
+
         .footer h3 {
             font-size: 20px;
             font-weight: bold;
             font-family: serif;
         }
+
         .footer-end {
-            text-align: center; /* Center the copyright text */
-            width: 100%;
+            text-align: center;
+            /* Center the copyright text */
+
         }
-        
-    
-      </style>
+    </style>
 </head>
 
 
@@ -94,15 +275,15 @@
         align-items: center;
         justify-content: space-between;
       ">
-      <a class="logo-container" href="#">
-        <img class="company-logo" src="../images/logo.png">
-      </a>
-      <a href="../index.html">HOME</a>
-      <a href="../pages/products.html">PRODUCTS</a>
-      <a href="../pages/blog.html">BLOG</a>
-      <a href="../pages/research.html">RESEARCH</a>
-      <a href="#">ABOUT US</a>
-      <a href="../pages/form.html"><button class="login-button">Login</button></a>
+        <a class="logo-container" href="#">
+            <img class="company-logo" src="../images/logo.png">
+        </a>
+        <a href="../index.html">HOME</a>
+        <a href="../pages/products.html">PRODUCTS</a>
+        <a href="../pages/blog.html">BLOG</a>
+        <a href="../pages/research.html">RESEARCH</a>
+        <a href="#">ABOUT US</a>
+        <a href="../pages/form.html"><button class="login-button">Login</button></a>
     </nav>
 
     <div class="aboutus">
@@ -120,7 +301,7 @@
             </p>
             <div class="button-container">
                 <a href="#products" class="about-button">Explore Our Collection</a>
-              </div>
+            </div>
         </div>
     </div>
     <div style="height: 100vh; background-color: white;">
@@ -173,53 +354,53 @@
         }
     </script>
 
-<footer class="footer">
-    <table class="footer-table">
-        <tr>
-            <td>
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="h2.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="aboutus.html">About us</a></li>
-                </ul>
-            </td>
+    <footer class="footer">
+        <table class="footer-table">
+            <tr>
+                <td>
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="h2.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </td>
 
-            <td>
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="../pages/aboutus.html">FAQs</a></li>
-                    <li><a href="../pages/products.html">Warranty</a></li>
-                    <li><a href="../pages/products.html">Shipping & Returns</a></li>
-                    <li><a href="../pages/aboutus.html">Contact Us</a></li>
-                    <li><a href="../pages/aboutus.html">Help</a></li>
-                </ul>
-            </td>
-            <td>
-                <h3>FollowUs</h3>
-                <div class="sns">
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
-                    <a href="https://instagram.com" target="_blank">
-                        <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
-                    <a href="https://www.youtube.com" target="_blank">
-                        <img src="../images/YouTube-icon.png" alt="Youtube"></a>
-                    <a href="https://www.x.com" target="_blank">
-                        <img src="../images/icons8-x-logo-50.png" alt="X"></a>
-                </div>
-            </td>
-        </tr>
+                <td>
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="../pages/aboutus.html">FAQs</a></li>
+                        <li><a href="../pages/products.html">Warranty</a></li>
+                        <li><a href="../pages/products.html">Shipping & Returns</a></li>
+                        <li><a href="../pages/aboutus.html">Contact Us</a></li>
+                        <li><a href="../pages/aboutus.html">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <h3>FollowUs</h3>
+                    <div class="sns">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <img src="../images/YouTube-icon.png" alt="Youtube"></a>
+                        <a href="https://www.x.com" target="_blank">
+                            <img src="../images/icons8-x-logo-50.png" alt="X"></a>
+                    </div>
+                </td>
+            </tr>
 
-        <tr>
-            <td class="footer-end">
-                <p> &copy;NovaTime 2025. All Rights Reserved.</p>
-            </td>
-        </tr>
+            <tr>
+                <td class="footer-end" colspan="3">
+                    <p> &copy;NovaTime 2025. All Rights Reserved.</p>
+                </td>
+            </tr>
 
-    </table>
-</footer>
+        </table>
+    </footer>
 
 
 
