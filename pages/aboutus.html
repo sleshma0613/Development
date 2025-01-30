@@ -229,7 +229,8 @@
             background: white;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 200px;
+            width: 250px;
+            height: 350px;
 
             transition: transform 0.2s;
             cursor: pointer;
@@ -242,13 +243,14 @@
 
         .card img {
             width: 100%;
-            height: auto;
+            height: 300px;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
+            object-fit: cover;
         }
 
         .card-content {
-            padding: 20px;
+            padding: -10px;
         }
 
         a {
@@ -256,7 +258,7 @@
             font-family: serif;
             color: black;
             font-size: 21px;
-            font-weight: 500;
+            font-weight: 300;
             flex: 1;
             transition: color 0.44s;
             text-align: center;
@@ -264,6 +266,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
+            
         }
 
         a:hover {
@@ -361,9 +365,9 @@
             <span class="close" id="closeBtn">&times;</span>
             <h2>Can you spare a minute?</h2>
             <p>Help us by answering some questions for better customer service.</p>
-           <a href="../pages/survey.html"> <button class="survey-button" id="surveyBtn">Survey Form</button></a>
+            <a href="../pages/survey.html"> <button class="survey-button" id="surveyBtn">Survey Form</button></a>
         </div>
-    
+
     </div>
 
 
@@ -395,43 +399,46 @@
 
     </div>
     <div class="members">
-        <div class="card" >
-            <img src="../images/user-icon--png.webp" alt="Adwaita Joshi">
-            <div class="card-content">
-                <h2>Adwaita Joshi</h2>
-            </div>
-        </div>
-        <a href="../cv/sleshma.html">
+        <a href="../cv/adwaita_cv.html">
+            <div class="card">
+                <img src="../images/user-icon--png.webp" alt="Adwaita Joshi">
+                <div class="card-content">
+                    <h2>Adwaita Joshi</h2>
+                </div>
+        
+    </div>
+</a>
+    <a href="../cv/sleshma.html">
 
-        <div class="card" >
+        <div class="card">
             <img src="../images/photo/pp.jpg" alt="Sleshma Maharjan">
             <div class="card-content">
                 <h2>Sleshma Maharjan</h2>
             </div>
 
         </div>
-        </a>
-        <a href="../cv/reason.html">
-        <div class="card" >
+    </a>
+    <a href="../cv/reason.html">
+        <div class="card">
             <img src="../images/photo/reason.jpg" alt="reason">
             <div class="card-content">
                 <h2>Reason Pokhrel</h2>
             </div>
         </div>
-        </a>
+    </a>
 
-        <div class="card" >
-            <img src="../images/user-icon--png.webp" alt="Krisha">
-            <div class="card-content">
-                <h2>Krisha Poudel </h2>
-            </div>
+    <div class="card">
+        <img src="../images/user-icon--png.webp" alt="Krisha">
+        <div class="card-content">
+            <h2>Krisha Poudel </h2>
         </div>
-        <div class="card" >
-            <img src="../images/user-icon--png.webp" alt="Aryan">
-            <div class="card-content">
-                <h2>Aryan Panday</h2>
-            </div>
+    </div>
+    <div class="card">
+        <img src="../images/user-icon--png.webp" alt="Aryan">
+        <div class="card-content">
+            <h2>Aryan Panday</h2>
         </div>
+    </div>
     </div>
     <script>/*js for survey form pop up*/
         var popup = document.getElementById("popup");
