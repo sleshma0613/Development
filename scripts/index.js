@@ -147,6 +147,39 @@ function renderProducts() {
     </div>
   `
   }
+
+  let slideImageElement = document.querySelector(".slide-image");
+  let slideImageText = document.querySelector(".slide-quote-js");
+  let imageIndex = 1;
+
+  function nextSlide() {
+    if (imageIndex < 3) {
+      imageIndex++;
+      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+      
+    } else {
+      imageIndex = 1;
+      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+    }
+  };
+
+  function prevSlide() {
+    if (imageIndex > 1) {
+      imageIndex--;
+      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+    } else {
+      imageIndex = 3;
+      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+    }
+  };
+
+  document.querySelector(".next-slide").addEventListener('click', () => {
+    nextSlide();
+  });
+
+  document.querySelector(".prev-slide").addEventListener('click', () => {
+    prevSlide();
+  });
 };
 
 //exposing functions to the global window object so it can be accessed by the onload attribute while loading webpages
@@ -156,34 +189,3 @@ window.renderProducts = renderProducts;
 function showProductDetails() {
   
 };
-
-// let slideImageElement = document.querySelector(".slide-image");
-// let imageIndex = 1;
-
-// function nextSlide() {
-//   if (imageIndex < 3) {
-//     imageIndex++;
-//     slideImageElement.src = `images/slide${imageIndex}.jpg`;
-//   } else {
-//     imageIndex = 1;
-//     slideImageElement.src = `images/slide${imageIndex}.jpg`;
-//   }
-// };
-
-// function prevSlide() {
-//   if (imageIndex > 1) {
-//     imageIndex--;
-//     slideImageElement.src = `images/slide${imageIndex}.jpg`;
-//   } else {
-//     imageIndex = 3;
-//     slideImageElement.src = `images/slide${imageIndex}.jpg`;
-//   }
-// };
-
-// document.querySelector(".next-slide").addEventListener('click', () => {
-//   nextSlide();
-// });
-
-// document.querySelector(".prev-slide").addEventListener('click', () => {
-//   prevSlide();
-// });
