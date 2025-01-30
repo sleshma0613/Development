@@ -1,17 +1,10 @@
+/* This is the external CSS file for the survey form */
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+    box-sizing: border-box;
 }
 body{
-    background-color:#f1c79e;
-    font-family: sans-serif;
-    padding:20px;
-    margin:auto;
-    color:#000000;
-    margin-inline:450px;
-    justify-content:center;
-    
+    background-color: rgba(241, 188, 117, 0.631);
+    height: 100%;
     }
     
     h1{
@@ -19,22 +12,22 @@ body{
         font-family:'Times New Roman',serif;
         font-weight:bold;
         font-style:italic;
-       text-align: center;
+        text-align: center;
         background-color:#eeba7e;
         margin:0;
-        
+        padding:10px;
     }
     h2{
         font-size: 15px;
         font-family:'Times New Roman',serif;
         background-color:#eeba7e;
         text-align: center;
-        
+        margin:0;
     }
     .form-container{
         width:500px;
         padding:20px;
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.767);
         border-radius:8px;
         margin: auto;
     }
@@ -79,7 +72,7 @@ body{
     }
     
    a{
-    background-color: #f14e4e;
+    background-color: rgba(235, 107, 21, 0.836);
     padding:8px;
     margin-top: 10px ;
     text-decoration: none;
