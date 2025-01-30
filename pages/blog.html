@@ -14,7 +14,7 @@
         a {
             text-decoration: none;
             font-family: serif;
-            color: black;
+            color: white;
             font-size: 21px;
             font-weight: 500;
             flex: 1;
@@ -29,6 +29,18 @@
         a:hover {
             color: gold;
         }
+
+        .logo-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .company-logo {
+            width: 130px;
+            border-radius: 90%;
+            object-fit: cover;
+
+        }
     </style>
 
 </head>
@@ -38,8 +50,7 @@
 
     <nav style="
        background-color:rgba(40,40,42,255);
-       
-        height: 100px;
+        height: 71px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -47,7 +58,7 @@
         <a class="logo-container" href="#">
             <img class="company-logo" src="../images/logo.png" alt="Logo">
         </a>
-        <a href="../pages/h2.html">HOME</a>
+        <a href="../index.html">HOME</a>
         <a href="../pages/products.html">PRODUCTS</a>
         <a href="../pages/blog.html">BLOG</a>
         <a href="../pages/research.html">RESEARCH</a>
@@ -57,10 +68,10 @@
 
     <div class="container">
         <div class="blog-head">
-        <header>
-            <h1>MY BLOG</h1>
-            <h2>Recent Blog Posts</h2>
-        </header>
+            <header>
+                <h1>MY BLOG</h1>
+                <h2>Recent Blog Posts</h2>
+            </header>
         </div>
         <!--main content of the page-->
         <div class="content">
