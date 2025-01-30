@@ -11,38 +11,47 @@
 
     <style>
         /*adding inline css*/
-        body,html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             height: 100%;
             font-family: 'georgia', serif;
-            
-        
-           
+
+
+
 
 
         }
+
         /*css for pop up linking survey form*/
-        .popup { 
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
+        .popup {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
             left: 0;
             top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            
-            
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+
+
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
         }
 
         .popup-content {
             background-color: #f5f3f2ff;
-            margin: 15% auto; /* 15% from the top and centered */
+            margin: 15% auto;
+            /* 15% from the top and centered */
             padding: 20px;
-            
+
             width: 38%;
-            text-align: center; 
+            text-align: center;
         }
 
         .close {
@@ -55,12 +64,13 @@
         .close:hover,
         .close:focus {
             color: rgb(247, 3, 3);
-            
+
             cursor: pointer;
         }
 
         .survey-button {
-            background-color: hsl(30, 39%, 49%); /* Green */
+            background-color: hsl(30, 39%, 49%);
+            /* Green */
             border: none;
             color: white;
             padding: 10px 20px;
@@ -72,6 +82,7 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
         /*css for nav bar */
 
         nav a {
@@ -81,9 +92,9 @@
         }
 
         .company-logo {
-            width: 200px;
-            border-radius: 90%;
-
+            width: 130px;
+            border-radius: 100%;
+            object-fit: cover;
 
         }
 
@@ -149,7 +160,7 @@
             text-align: center;
             margin-top: -700px;
             padding-top: 0;
-           
+
         }
 
         .aboutus {
@@ -209,8 +220,8 @@
             /* Allow wrapping to the next line */
             gap: 20px;
             padding-bottom: 140px;
-            
-           
+
+
         }
 
 
@@ -262,10 +273,10 @@
         .footer {
             text-align: center;
             margin: 0;
-            background-color: rgba(189,131,52,255);
+            background-color: rgba(180, 116, 63, 255);
             display: flex;
             width: 100%;
-           
+
         }
 
         .footer-table {
@@ -330,7 +341,7 @@
     <nav style="
        background-color:rgba(40,40,42,255);
        
-        height: 100px;
+        height: 71px;px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -353,7 +364,7 @@
             <button class="survey-button" id="surveyBtn">Survey Form</button>
         </div>
     </div>
-    
+
 
     <div class="aboutus">
         <div class="content">
@@ -373,7 +384,7 @@
             </div>
         </div>
     </div>
-    <div style="height: 100vh; background-color: rgb(248,204,156)">
+    <div style="height: 100vh; background-color: rgb(246, 230, 212)">
 
     </div>
     <div class="grpMemb">
@@ -420,34 +431,34 @@
     <script>
         var popup = document.getElementById("popup");
 
-// Get the <span> element that closes the modal
-var closeBtn = document.getElementById("closeBtn");
+        // Get the <span> element that closes the modal
+        var closeBtn = document.getElementById("closeBtn");
 
-// Gets the survey button
-var surveyBtn = document.getElementById("surveyBtn");
+        // Gets the survey button
+        var surveyBtn = document.getElementById("surveyBtn");
 
-// When the user opens the page, open the modal 
-window.onload = function() {
-    popup.style.display = "block";
-}
+        // When the user opens the page, open the modal 
+        window.onload = function () {
+            popup.style.display = "block";
+        }
 
-// When the user clicks on <span> (x), close the modal
-closeBtn.onclick = function() {
-    popup.style.display = "none";
-}
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function () {
+            popup.style.display = "none";
+        }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
-}
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
 
-// When the user clicks the survey button, redirect to the survey form
-surveyBtn.onclick = function() {
-    // Replace 'your-survey-url' with the actual URL of your survey form
-    window.location.href = 'your-survey-url';
-}
+        // When the user clicks the survey button, redirect to the survey form
+        surveyBtn.onclick = function () {
+            // Replace 'your-survey-url' with the actual URL of your survey form
+            window.location.href = 'your-survey-url';
+        }
         function openCV(cvPath) {//js for opening cv// 
             window.open(cvPath, '_blank');
         }

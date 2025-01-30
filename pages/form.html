@@ -1,70 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="form">
-	<meta name="keywords" content="HTML,meta tags,form">
-    
-    <link rel="stylesheet" href="../styles/login.css">
-    
-    <script>
-        function validateForm(){
-            const username = document.forms["login form"]["username"].value;
-            const password=document.forms["login form"]["password"].value;
-            if(username==="" || password===""){
-                alert("please fill in the fields");
-                return false;// submission fails
-            }
-            else{
-            alert("YOU HAVE SUCCESSFULLY LOGGED IN ");
-            return true;//logs in
+    <meta name="description" content="form">
+    <meta name="keywords" content="HTML,meta tags,form">
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: height 101vh;
+            background-image: url("../images/pexels-tima-miroshnichenko-7033891.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+
         }
-    }
-    </script>
+
+        .logo {
+            width: 200px;
+            height: auto;
+            /* Maintain aspect ratio */
+            position: absolute;
+            top: 0;
+            left: 0;
+           
+        }
+
+        .loginForm {
+            width: 390px;
+            background-color: rgba(255, 255, 255, 0.7);
+            opacity: 1;
+            height: 500px;
+
+
+        }
+
+        .loginForm h1 {
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            padding-top: 50px;
+          
+        }
+
+        .input {
+            text-align: center;
+            font-size: 20px
+        }
+
+        .input-field {
+            text-align: center;
+            width: 200px;
+            height: 30px;
+            font-size: 15px;
+            padding: 0 25px;
+
+
+            border: none;
+            box-shadow: 0px 2px 8px;
+        }
+
+
+        .loginForm.input {
+            text-align: center;
+
+        }
+
+        button {
+            padding: 9px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px;
+            width: 40%;
+            margin-inline: 50px;
+
+
+
+
+
+        }
+
+        button:hover {
+            background-color: rgb(255, 0, 0);
+
+
+        }
+
+        .forgot {
+            margin-bottom: 30px;
+            margin-left: 115px;
+            font-size: 15px;
+            margin-top: 18px;
+        }
+
+        .signup {
+            text-align: center;
+
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: rgb(55, 17, 245);
+        }
+    </style>
+
+    
 
 
 </head>
+
 <body>
-    
-    <div class="loginForm" >
-        <h1>Login</h1>
-    <form >
+    <header>
+        <img src="../images/logo-removebg-preview.png" alt="Logo" class="logo">
+    </header>
+    <main>
 
-        <div class="input">
-            
-            
-        <input type="username" class="input-field" placeholder="Enter your username  " required>
-        
-       
-        <br>
-        <br
+
+        <div class="loginForm">
+            <h1>Login</h1>
+            <form>
+
+                <div class="input">
+
+
+                    <input type="username" class="input-field" placeholder="Enter your username  " required>
+
+
+                    <br>
+                    <br </div>
+                    <div class="input">
+
+
+                        <input type="password" class="input-field" placeholder="Enter Password " required>
+
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot password</a>
+                    </div>
+                    <br>
+
+                    <button type="submit" onclick="validateForm()">Login</button>
+
+                    <br>
+                    <br>
+                    <div class="signup" <p>Dont have an account? <a href="#">Sign up </a></p>
+                        <a href="../index.html">Back to Home</a>
+                    </div>
+            </form>
         </div>
-        <div class="input">
-        
-    
-        <input type="password" class="input-field" placeholder="Enter Password " required>
-        
-        </div>
-        <div class="forgot">
-            <a href="#">Forgot password</a>
-        </div>
-        <br>
-       
-        <button type="submit" onclick="validateForm()">Login</button>
-    
-        <br>
-        <br>
-        <div class="signup"
-    <p>Dont have an account? <a href ="#">Sign up </a></p>
-    <a href="../index.html">Back to Home</a>
-    </div>
-    </form>
-  </div>
-
-   
-
-
-     
+        <script>
+            function validateForm() {
+                const username = document.forms["login form"]["username"].value;
+                const password = document.forms["login form"]["password"].value;
+                if (username === "" || password === "") {
+                    alert("please fill in the fields");
+                    return false;// submission fails
+                }
+                else {
+                    alert("YOU HAVE SUCCESSFULLY LOGGED IN ");
+                    return true;//logs in
+                }
+            }
+        </script>
