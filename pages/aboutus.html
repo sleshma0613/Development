@@ -86,7 +86,7 @@
         /*css for nav bar */
 
         nav a {
-            color: #bd8334;
+            color: #fcfcfc;
             text-decoration: none;
 
         }
@@ -361,8 +361,9 @@
             <span class="close" id="closeBtn">&times;</span>
             <h2>Can you spare a minute?</h2>
             <p>Help us by answering some questions for better customer service.</p>
-            <button class="survey-button" id="surveyBtn">Survey Form</button>
+           <a href="../pages/survey.html"> <button class="survey-button" id="surveyBtn">Survey Form</button></a>
         </div>
+    
     </div>
 
 
@@ -394,41 +395,45 @@
 
     </div>
     <div class="members">
-        <div class="card" onclick="openCV('Adwaitas cv.pdf')">
+        <div class="card" >
             <img src="../images/user-icon--png.webp" alt="Adwaita Joshi">
             <div class="card-content">
                 <h2>Adwaita Joshi</h2>
             </div>
         </div>
+        <a href="../cv/sleshma.html">
 
-        <div class="card" onclick="openCV('Sleshmas cv.pdf')">
-            <img src="../images/user-icon--png.webp" alt="Sleshma Maharjan">
+        <div class="card" >
+            <img src="../images/photo/pp.jpg" alt="Sleshma Maharjan">
             <div class="card-content">
                 <h2>Sleshma Maharjan</h2>
             </div>
 
         </div>
-        <div class="card" onclick="openCV('Reasons cv.pdf')">
-            <img src="../images/user-icon--png.webp" alt="reason">
+        </a>
+        <a href="../cv/reason.html">
+        <div class="card" >
+            <img src="../images/photo/reason.jpg" alt="reason">
             <div class="card-content">
                 <h2>Reason Pokhrel</h2>
             </div>
         </div>
+        </a>
 
-        <div class="card" onclick="openCV('Krishas cv.pdf')">
+        <div class="card" >
             <img src="../images/user-icon--png.webp" alt="Krisha">
             <div class="card-content">
                 <h2>Krisha Poudel </h2>
             </div>
         </div>
-        <div class="card" onclick="openCV('Aryan cv.pdf')">
+        <div class="card" >
             <img src="../images/user-icon--png.webp" alt="Aryan">
             <div class="card-content">
                 <h2>Aryan Panday</h2>
             </div>
         </div>
     </div>
-    <script>
+    <script>/*js for survey form pop up*/
         var popup = document.getElementById("popup");
 
         // Get the <span> element that closes the modal
