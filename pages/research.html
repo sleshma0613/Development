@@ -14,6 +14,7 @@
             font-family: 'Times New Roman', serif;
             margin: 0;
             padding: 0;
+            background-color: rgba(226, 149, 100, 0.616);
         }
 
         a {
@@ -98,21 +99,30 @@
             text-align: left;
         }
 
-        .image {
+        .box img {
             width: 100%;
-            height: 100%;
+            margin: 0;
+            box-shadow: #000000 1px 1px 1px;
         }
 
         .box-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
 
         }
 
         .box {
-            display: flex;
-            align-items: center;
+            width: 45%;
+            padding: 10px;
+            text-align: center;
             justify-content: center;
+        }
+
+        .box p {
+            margin-top: 10px;
+            color: #644527;
+            font-size: 18px;
         }
 
         .content h1 {
@@ -122,8 +132,16 @@
             font-family: serif;
             font-weight: lighter;
             font-style: italic;
-            color:#eb8d40;
-            margin:20px;
+            color: rgb(238, 98, 55);
+            margin: 20px;
+        }
+
+        .content h2 {
+            font-size: 20px;
+            color: #634126;
+            text-align: center;
+            background-color: #f5deb3;
+            margin:0;
         }
     </style>
 </head>
@@ -148,79 +166,96 @@
     <div class="container">
         <div class="content">
             <h1>MY RESEARCH</h1>
-
+            <h2>To construct this website themed vintage watches, we have taken references form a variety of
+                inspiration are mentioned below:</h2>
         </div>
 
         <div class="box-container">
             <div class="box">
-                <a href="https://www.insight.com/en_US/about.html">
-                    <img src="../images/WhatsApp Image 2025-01-17 at 18.22.17_cc6f9bbf.jpg" alt="Insight website"></a>
-                <h2>We have taken reference of About us page from The webpage named
-                    Insight.</h2>
-                <img src="../images/466880495_4108410416059308_681196687072821496_n.jpg" alt="About Us page">
-                <h2>This the About Us page of our website.</h2>
+                <a href="https://www.insight.com/en_US/about.html" target="_blank">
+                    <img src="../images/WhatsApp Image 2025-01-17 at 18.22.17_cc6f9bbf.jpg" alt="Insight"></a>
+                <p>e have taken reference of About us page from The webpage named
+                    Insight.</p>
+            </div>
+            <div class="box">
+                <a href="../pages/aboutus.html" target="_blank">
+                    <img src="../images/466880495_4108410416059308_681196687072821496_n.jpg" alt="About Us page"></a>
+                <p>his the About Us page of our website.</p>
             </div>
         </div>
         <div class="box-container">
             <div class="box">
-                <a href="">
-                    <img src="../images/WhatsApp Image 2025-01-17 at 18.22.17_6d6b1c20.jpg"></a>
-                <h2>We took the Login page reference from Netflix. Our website after
-                    taking the reference looks like this.</h2>
-                <img src="../images/WhatsApp Image 2025-01-17 at 18.22.17_49f53b6b.jpg">
-
+                <a href="https://www.netflix.com/np/" target="_blank">
+                    <img src="../images/WhatsApp Image 2025-01-17 at 18.22.17_6d6b1c20.jpg" alt="Netflix"></a>
+                <p>We took the Login page reference from Netflix.</p>
+            </div>
+            <div class="box">
+                <a href="../pages/form.html" target="_blank">
+                    <img src="../images/WhatsApp Image 2025-01-17 at 18.22.17_49f53b6b.jpg" alt="Login page"></a>
+                <p>This is the login page of our website.</p>
             </div>
         </div>
-    </div>
+        <div class="box-container">
+            <div class="box">
+                <a href="https://www.freecodecamp.org/" target="_blank">
+                    <img src="../images/reference/surveyreference.png" alt="freeCodeCamp"></a>
+                <p>We have taken the reference of the survey form from freeCodeCamp.</p>
+            </div>
+            <div class="box">
+                <a href="../pages/survey.html" target="_blank">
+                    <img src="../images/reference/survey.png" alt="Survey from"></a>
+                <p>ur survey form after taking the reference looks like this.</p>
+            </div>
+        </div>
 
-    <!--this is a footer and copyright of the page-->
-    <footer class="footer">
-        <table class="footer-table">
-            <tr>
-                <td>
-                    <h2>Quick Links</h2>
-                    <ul>
-                        <li><a href="h2.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                    </ul>
-                </td>
+        <!--this is a footer and copyright of the page-->
+        <footer class="footer">
+            <table class="footer-table">
+                <tr>
+                    <td>
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="h2.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="research.html">Research</a></li>
+                            <li><a href="aboutus.html">About us</a></li>
+                        </ul>
+                    </td>
 
-                <td>
-                    <h2>Customer Service</h2>
-                    <ul>
-                        <li><a href="../pages/aboutus.html">FAQs</a></li>
-                        <li><a href="../pages/products.html">Warranty</a></li>
-                        <li><a href="../pages/products.html">Shipping & Returns</a></li>
-                        <li><a href="../pages/aboutus.html">Contact Us</a></li>
-                        <li><a href="../pages/aboutus.html">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <h2>FollowUs</h2>
-                    <div class="sns">
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
-                        <a href="https://www.youtube.com" target="_blank">
-                            <img src="../images/YouTube-icon.png" alt="Youtube"></a>
-                        <a href="https://www.x.com" target="_blank">
-                            <img src="../images/icons8-x-logo-50.png" alt="X"></a>
-                    </div>
-                </td>
-            </tr>
+                    <td>
+                        <h2>Customer Service</h2>
+                        <ul>
+                            <li><a href="../pages/aboutus.html">FAQs</a></li>
+                            <li><a href="../pages/products.html">Warranty</a></li>
+                            <li><a href="../pages/products.html">Shipping & Returns</a></li>
+                            <li><a href="../pages/aboutus.html">Contact Us</a></li>
+                            <li><a href="../pages/aboutus.html">Help</a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h2>FollowUs</h2>
+                        <div class="sns">
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+                            <a href="https://instagram.com" target="_blank">
+                                <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+                            <a href="https://www.youtube.com" target="_blank">
+                                <img src="../images/YouTube-icon.png" alt="Youtube"></a>
+                            <a href="https://www.x.com" target="_blank">
+                                <img src="../images/icons8-x-logo-50.png" alt="X"></a>
+                        </div>
+                    </td>
+                </tr>
 
-            <tr>
-                <td class="footer-end">
-                    <p align="center"> &copy;NovaTime 2025. All Rights Reserved.</p>
-                </td>
-            </tr>
+                <tr>
+                    <td class="footer-end">
+                        <p align="center"> &copy;NovaTime 2025. All Rights Reserved.</p>
+                    </td>
+                </tr>
 
-        </table>
-    </footer>
+            </table>
+        </footer>
 </body>
 
 </html>
