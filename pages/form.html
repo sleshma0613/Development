@@ -138,16 +138,16 @@
 
         <div class="loginForm">
             <h1>Login</h1>
-            <form>
+            <form name="loginForm" onsubmit="return validateForm()">
 
                 <div class="input">
 
 
-                    <input type="username" class="input-field" placeholder="Enter your username  " required>
+                    <input type="text" class="input-field" placeholder="Enter your username  " required>
 
 
-                    <br>
-                    <br </div>
+                    <br><br
+                     </div>
                     <div class="input">
 
 
@@ -155,30 +155,30 @@
 
                     </div>
                     <div class="forgot">
-                        <a href="#">Forgot password</a>
+                        <a href="#error">Forgot password</a>
                     </div>
                     <br>
 
-                    <button type="submit" onclick="validateForm()">Login</button>
+                    <button type="submit">Login</button>
 
                     <br>
                     <br>
-                    <div class="signup" <p>Dont have an account? <a href="#">Sign up </a></p>
+                    <div class="signup">
+                         <p>Dont have an account? <a href="#error">Sign up </a></p>
                         <a href="../index.html">Back to Home</a>
                     </div>
             </form>
         </div>
         <script>
             function validateForm() {
-                const username = document.forms["login form"]["username"].value;
-                const password = document.forms["login form"]["password"].value;
+                const username = document.forms["loginForm"]["username"].value;
+                const password = document.forms["loginForm"]["password"].value;
                 if (username === "" || password === "") {
-                    alert("please fill in the fields");
-                    return false;// submission fails
-                }
-                else {
-                    alert("YOU HAVE SUCCESSFULLY LOGGED IN ");
-                    return true;//logs in
+                    alert("Please fill in the fields");
+                    return false; // submission fails
+                } else {
+                    alert("YOU HAVE SUCCESSFULLY LOGGED IN");
+                    return true; // logs in
                 }
             }
         </script>
