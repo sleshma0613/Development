@@ -70,6 +70,10 @@ body {
   color: gold;
   margin-top: 7px;
 }
+.featured-heading{
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
 
 .featured-catalogue, .products-catalogue {
   display: grid;
