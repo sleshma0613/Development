@@ -33,40 +33,36 @@
             left: 0;
             width: 100%;
             height: 121%;
-            background-color: rgba(0, 0, 0, 0.221);
+            background-color: rgba(0, 0, 0, 0.344);
       }
       .overlay-text {
             position: absolute;
-            top: 70%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); /* Adjust for the text size */
-            color: white; 
-            font-size: 35px; 
-           
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
             text-align: center;
-            font-family: sans-serif;
-            
+            font-size: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+        }
+        .overlay-text h1 {
+            margin-top: 10px;
+            font-size: 70px;
         }
         .explore-button {
-            positio
-            bottom: -10px; /* Position from the bottom */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Adjust for the button width */
-            padding: 10px 20px; /* Button padding */
-            font-size: 18px; /* Button text size */
-            color: white; /* Text color */
-            background-color: transparent; /* Transparent background */
-            
-
-            cursor: pointer; /* Pointer cursor on hover */
+            display: inline-block;
+            margin-top: -5px;
+            padding: 15px 10px;
+            background: rgba(255, 255, 255, 0);
+            color:#f9bd64;
+            font-size: 15px;
+            font-weight: bold;
            
-            text-decoration: none; /* Remove underline */
-            transition: background-color 0.3s, color 0.3s; /* Transition effects */
-        }
-
-        .explore-button:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
-            color: black; /* Change text color on hover */
+            text-decoration: none;
+            border-radius: 5px;
         }
         
       .footer {
@@ -160,7 +156,7 @@
       </video>
       <div class="dark-overlay"></div>
       <div class="overlay-text">WHERE EVERY SECOND SHINES BRIGHT<h1><b>NOVA TIMES</b></h1>
-        <a href="../Development/pages/products.html" class="explore-button">Explore Our Page</a>
+        <a href="pages/products.html" class="explore-button">Explore Our Products</a>
       </div>
       
 </div>
