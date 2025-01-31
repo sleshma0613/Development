@@ -2,15 +2,17 @@ let featuredProducts = [
   {
     product_id : "f1",
     product_name : "Omega Speedmaster Pilot",
-    product_price : "300000 NPR",
-    product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
+    product_price : "10950",
+    discounted_price: "7999",
+    product_description : "Soaring between earth and space, OMEGA watches have enjoyed a long history in the skies. Now, to propel that legacy further, the brand proudly launches the new Speedmaster Pilot. Aimed at a new generation of pilots in flight, this 40.85 mm design follows the very same symmetrical style of the original Speedmaster from 1957.",
     product_image: "images/watches/Home_SP_Pilot_KV_Push.avif"
   },
   {
     product_id : "f2",
     product_name : "Patek Philippe Calatrava",
-    product_price : "300000 NPR",
-    product_description : "Ekdam Dami xa Ghadi, Khatraaaaa xa",
+    product_price : "31000",
+    discounted_price: "26000",
+    product_description : "Patek Philippe expands its range of elegant ladies' watches with a new version of the self-winding Calatrava Reference 4997 in rose gold decked out in purple – an original and refined color that perfectly matches the warm nuances of the precious metal and the diamond-set bezel.",
     product_image: "images/watches/patek-philippe-calatrava.jpg"
   },
   {
