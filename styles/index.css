@@ -68,6 +68,7 @@ body {
   font-family: serif;
   font-weight: 500;
   color: gold;
+  margin-top: 7px;
 }
 
 .featured-catalogue, .products-catalogue {
