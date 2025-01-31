@@ -107,49 +107,6 @@ let products = [
   },
 ];
 
-function renderFeaturedProducts() {
-  const featuredProductElement = document.querySelector(".featured-catalogue-js");
-  for (let i = 0; i <= featuredProducts.length - 1; i++) {
-    featuredProductElement.innerHTML += `
-    <div class="featured-product">
-      <img class = "product-image" src = ${featuredProducts[i].product_image}>
-      <div class="product-details-layer">
-        <button class="action-button buy-button" style="
-          position: absolute;
-          bottom: 0;
-          right: 0;
-        " onclick="alert('Added To Cart!')">
-          <img src="images/icons/cart-icon.svg" height="100%" style="
-            object-fit: cover;
-          ">
-        </button>
-      </div>
-    </div>
-  `
-  }
-};
-
-function renderProducts() {
-  const productsElement = document.querySelector(".products-catalogue-js");
-  for (let i = 0; i <= products.length - 1; i++) {
-    productsElement.innerHTML += `
-    <div class="product-container">
-      <img class = "product-image" src = ${products[i].product_image}>
-      <div class="product-details-layer">
-        <button class="action-button buy-button" style="
-          position: absolute;
-          bottom: 0;
-          right: 0;
-        " onclick="alert('Added To Cart!')">
-          <img src="../images/icons/cart-icon.svg" height="100%" style="
-            object-fit: cover;
-          ">
-        </button>
-      </div>
-    </div>
-  `
-  }
-
   let slideImageElement = document.querySelector(".slide-image");
   let slideImageText = document.querySelector(".slide-quote-js");
   let imageIndex = 1;
@@ -182,7 +139,6 @@ function renderProducts() {
   document.querySelector(".prev-slide").addEventListener('click', () => {
     prevSlide();
   });
-};
 
 //exposing functions to the global window object so it can be accessed by the onload attribute while loading webpages
 window.renderFeaturedProducts = renderFeaturedProducts;
