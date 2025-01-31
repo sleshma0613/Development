@@ -66,69 +66,71 @@
             text-decoration: none;
             border-radius: 5px;
         }
-        .article{
-          display: flex;
-  height: 60px;
-  align-items: center;
-  background-color: #39362e;
-  
-  color: #131010;
-  font-family: serif;
-  font-weight: 500;
-  color: gold;
-  margin-top: 7px;
-  margin-bottom: -50px;
-  
-        }
         .blog-preview {
-          position: relative; /* Position relative to allow absolute positioning of child elements */
-    max-width: 100%; /* Ensure the container does not exceed the width of its parent */
-    margin: 50px auto; /* Center the container */
-
-            text-align: center;
-        }
-        .blog-preview h2 {
-            font-size: 48px;
-            
-        }
-        .blog-preview p {
-            margin-top: 10px;
-            font-size: 26px;
-            
-            display: inline;
-        }
-        .read-more {
-            display: inline;
-            margin-left: 5px;
-            background: none;
-            color: #8a5a44;
-            font-size: 16px;
-            text-decoration: underline;
-            border: none;
-            cursor: pointer;
-        }
-        .background-image {
-    width: 100%; 
-    height: 800px; 
-
-     
-
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    overflow: hidden;
 }
 
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Keep the background image behind everything */
+}
+
+.blog-preview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Place it above the background image but below the text */
+}
 
 .text-overlay {
-    position: absolute; /* Position the text overlay absolutely */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust position to truly center */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-    padding: 20px; /* Padding around the text */
-    width: 100%;
-            height: 90%;
-            
+    position: relative; /* Keep it relative to stack above the overlay */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color remains white */
+    max-width: 600px;
+    z-index: 2; /* Ensure text is above the overlay */
 }
+
+.text-overlay h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.discover-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+.discover-button:hover {
+    background: white;
+    color: black;
+}
+
         
       .footer {
         text-align: center;
@@ -283,14 +285,15 @@
       </div>
     </section>
     <div class="article">Article You May Be Interested</div>
-    <div class="blog-preview">
-      <img src="images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
-      <div class="text-overlay">
-          <h2>About Technology</h2>
-          <p>Technology has taken over every aspect of our lives, transforming communication, shopping, and even the appreciation of art. In recent years, there has been a significant change in the watch sector. Digital platforms have made it possible for collectors to display their works and interact with other collectors across the world in virtual marketplaces.We can now inspect watches in previously unheard details thanks to high resolution image and video technology. More precise identification of old watches is now possible thanks to advanced testing technology. From the exposure of e-commerce platforms to the influence of social media, the availability off information has fundamentally changed how...</p>
-          <a href="pages/blog.html" class="read-more">Continue Reading</a>
-          <a href="pages/blog.html" class="more-articles-button">For More Articles ></a>
-      </div>
+<div class="blog-preview" style="position: relative;">
+    <img src="images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
+    <div class="text-overlay">
+        <h2>ABOUT TECHNOLOGY</h2>
+        <p>Technology has taken over every aspect of our lives, transforming communication, shopping, and even the appreciation of art. In recent years, there has been a significant change in the watch sector. Digital platforms have made it possible for collectors to display their works and interact with other collectors across the world in virtual marketplaces. We can now inspect watches in previously unheard details thanks to high-resolution image and video technology. More precise identification of old watches is now possible thanks to advanced testing technology.</p>
+        <a href="pages/blog.html" class="discover-button">Discover More</a>
+    </div>
+</div>
+
       
   </div>
 
