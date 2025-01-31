@@ -1,238 +1,373 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Nova Times</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="E-Commerce Website For Watches">
-    <meta name="keywords" content="watch, classic, smart">
-    <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-      a {
-        text-decoration: none;
-        font-family: serif;
-        color: white;
-        font-size: 21px;
-        font-weight: 500;
-        flex: 1;
-        transition: color 0.44s;
-        text-align: center;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+<head>
+  <title>Nova Times</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="E-Commerce Website For Watches">
+  <meta name="keywords" content="watch, classic, smart">
+  <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      a:hover {
-        color: gold;
-      }
+  <style>
+    a {
+      text-decoration: none;
+      font-family: serif;
+      color: white;
+      font-size: 21px;
+      font-weight: 500;
+      flex: 1;
+      transition: color 0.44s;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      .dark-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 121%;
-        background-color: rgba(0, 0, 0, 0.344);
-      }
+    a:hover {
+      color: gold;
+    }
 
-      .overlay-text {
-            position: absolute;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            text-align: center;
-            font-size: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
-        }
-        .overlay-text h1 {
-            margin-top: 10px;
-            font-size: 70px;
-        }
-        .explore-button {
-            display: inline-block;
-            margin-top: -5px;
-            padding: 15px 10px;
-            background: rgba(255, 255, 255, 0);
-            color:#f9bd64;
-            font-size: 15px;
-            font-weight: bold;
-           
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .blog-preview {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full-screen height */
-    overflow: hidden;
-}
+    .dark-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 121%;
+      background-color: rgba(0, 0, 0, 0.344);
+    }
 
-.background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Keep the background image behind everything */
-}
+    .overlay-text {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+    }
 
-.blog-preview::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 1; /* Place it above the background image but below the text */
-}
+    .overlay-text h1 {
+      margin-top: 10px;
+      font-size: 70px;
+    }
 
-.text-overlay {
-    position: relative; /* Keep it relative to stack above the overlay */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white; /* Text color remains white */
-    max-width: 600px;
-    z-index: 2; /* Ensure text is above the overlay */
-}
+    .explore-button {
+      display: inline-block;
+      margin-top: -5px;
+      padding: 15px 10px;
+      background: rgba(255, 255, 255, 0);
+      color: #f9bd64;
+      font-size: 15px;
+      font-weight: bold;
 
-.text-overlay h2 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
+      text-decoration: none;
+      border-radius: 5px;
+    }
 
-.text-overlay p {
-    font-size: 18px;
-    line-height: 28px;
-}
+    .blog-preview {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      /* Full-screen height */
+      overflow: hidden;
+    }
 
-.discover-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s ease-in-out;
-}
+    .background-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      /* Keep the background image behind everything */
+    }
 
-.discover-button:hover {
-    background: white;
-    color: black;
-}
+    .blog-preview::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+      /* Place it above the background image but below the text */
+    }
 
-        
-      .footer {
-        text-align: center;
-        margin: 0;
-        background-color: rgba(189,131,52,255);
-        display: flex;
-        width: 100%;
-      }
+    .article-title {
+      position: absolute;
+      top: 200px;
+      /* Adjust as needed */
+      margin-left: 45%;
+      font-size: 20px;
+      /* Slightly larger than the paragraph */
+      color: white;
+      /* Text color */
+      font-weight: bold;
+      /* Make it bold */
+      z-index: 2;
+      /* Ensure it is above the overlay */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+      /* Optional: Add a shadow for better readability */
+    }
 
-      .footer-table {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-      }
+    .text-overlay {
+      position: relative;
+      /* Keep it relative to stack above the overlay */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      /* Text color remains white */
+      max-width: 600px;
+      z-index: 2;
+      /* Ensure text is above the overlay */
+    }
 
-      .footer-table p {
-        font-size: 15px;
-        font-family: serif;
-        text-align: center;
-      }
+    .text-overlay h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
 
-      .footer-table td {
-        margin-bottom: 10px;
-        vertical-align: top;
-        padding: 10px;
-        font-weight: bold;
-      }
+    .text-overlay p {
+      font-size: 18px;
+      line-height: 28px;
+    }
 
-      .footer-table ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
+    .discover-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s ease-in-out;
+    }
 
-      .footer-table ul li {
-        margin-bottom: 10px;
-      }
+    .discover-button:hover {
+      background: white;
+      color: black;
+    }
 
-      .sns {
-        gap: 10px;
-        display: flex;
-        justify-content: left;
-        text-align: left;
-        flex-direction: column;
-      }
+    .video-preview {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      /* Fixed height */
+      overflow: hidden;
+    }
 
-      .sns a,
-      .sns img {
-        margin: 0;
-        padding: 0;
-      }
+    .background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      /* Keep the video behind everything */
+    }
 
-      .footer h3 {
-        font-size: 20px;
-        font-weight: bold;
-        font-family: serif;
-      }
+    .video-preview::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
+      z-index: 1;
+      /* Place it above the video but below the text */
+    }
 
-      .footer-end {
-        text-align: center;
-        /* Center the copyright text */
-      }
-    </style>
-    <link rel="stylesheet" href="styles/index.css">
-  </head>
-  <body style="
+    .video-overlay {
+      position: relative;
+      /* Keep it relative to stack above the overlay */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      /* Center all text within the overlay */
+      color: white;
+      /* Text color remains white */
+      max-width: 600px;
+      z-index: 2;
+      /* Ensure text is above the overlay */
+    }
+
+    .video-overlay h2 {
+      font-size: 40px;
+      /* Heading font size */
+      margin-bottom: 20px;
+      /* Space below the heading */
+    }
+
+    .video-overlay p {
+      font-size: 18px;
+      /* Paragraph font size */
+      line-height: 28px;
+      /* Line height for paragraph */
+    }
+
+
+    .portfolio-section {
+      display: flex;
+
+      padding: 20px;
+      background-color: #f9bd64;
+    }
+
+
+
+
+    .portfolio-title {
+      flex: 1;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .portfolio-images {
+      display: flex;
+      gap: 35px;
+      /* Space between images */
+    }
+
+    .circular-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .arrow-link {
+      margin-right: 100px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: 50px;
+      color: black;
+    }
+
+    .arrow-link:hover {
+      color: rgb(223, 252, 2);
+    }
+
+
+
+
+
+    .footer {
+      text-align: center;
+      margin: 0;
+      background-color: rgba(189, 131, 52, 255);
+      display: flex;
+      width: 100%;
+    }
+
+    .footer-table {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-table p {
+      font-size: 15px;
+      font-family: serif;
+      text-align: center;
+    }
+
+    .footer-table td {
+      margin-bottom: 10px;
+      vertical-align: top;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .footer-table ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-table ul li {
+      margin-bottom: 10px;
+    }
+
+    .sns {
+      gap: 10px;
+      display: flex;
+      justify-content: left;
+      text-align: left;
+      flex-direction: column;
+    }
+
+    .sns a,
+    .sns img {
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer h3 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: serif;
+    }
+
+    .footer-end {
+      text-align: center;
+      /* Center the copyright text */
+    }
+  </style>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body style="
     background-image: url(images/website-background.jpg);
   ">
-    <nav style="
+  <nav style="
         background-color: rgba(40, 40, 42, 255);
         height: 71px;
         display: flex;
         align-items: center;
         justify-content: space-between;
       ">
-      <a class="logo-container" href="#">
-        <img class="company-logo" src="images/logo.png">
-      </a>
-      <a href="index.html">HOME</a>
-      <a href="pages/products.html">PRODUCTS</a>
-      <a href="pages/blog.html">BLOG</a>
-      <a href="pages/research.html">RESEARCH</a>
-      <a href="pages/aboutus.html">ABOUT US</a>
-      <a href="pages/form.html"><button class="login-button">Login</button></a>
-    </nav>
+    <a class="logo-container" href="#">
+      <img class="company-logo" src="images/logo.png">
+    </a>
+    <a href="index.html">HOME</a>
+    <a href="pages/products.html">PRODUCTS</a>
+    <a href="pages/blog.html">BLOG</a>
+    <a href="pages/research.html">RESEARCH</a>
+    <a href="pages/aboutus.html">ABOUT US</a>
+    <a href="pages/form.html"><button class="login-button">Login</button></a>
+  </nav>
 
-    <div class="slideshow">
-      <video width="100%" autoplay loop muted style="pointer-events: none;">
-        <source src="images/watches/landing.mp4" type="video/mp4">
-      </video>
-      <div class="dark-overlay"></div>
-      <div class="overlay-text">WHERE EVERY SECOND SHINES BRIGHT<h1><b>NOVA TIMES</b></h1>
-        <a href="pages/products.html" class="explore-button">Explore Our Products</a>
-      </div>
-      
-</div>
+  <div class="slideshow">
+    <video width="100%" autoplay loop muted style="pointer-events: none;">
+      <source src="images/watches/landing.mp4" type="video/mp4">
+    </video>
+    <div class="dark-overlay"></div>
+    <div class="overlay-text">WHERE EVERY SECOND SHINES BRIGHT<h1><b>NOVA TIMES</b></h1>
+      <a href="pages/products.html" class="explore-button">Explore Our Products</a>
+    </div>
 
-    
+  </div>
 
-    <div class="intro">
-      
-    
+
+
+  <div class="intro">
+
+
     <section class="highlights">
       <div class="featured-collection">
         <div class="featured-heading">FEATURED COLLECTION</div>
@@ -251,7 +386,7 @@
               </button>
             </div>
           </div>
-        
+
           <div class="featured-product">
             <img class="product-image" src="images/watches/patek-philippe-calatrava.jpg">
             <div class="product-details-layer">
@@ -266,7 +401,7 @@
               </button>
             </div>
           </div>
-        
+
           <div class="featured-product">
             <img class="product-image" src="images/W1.jpg">
             <div class="product-details-layer">
@@ -284,67 +419,108 @@
         </div>
       </div>
     </section>
-    <div class="article">Article You May Be Interested</div>
-<div class="blog-preview" style="position: relative;">
-    <img src="images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
-    <div class="text-overlay">
-        <h2>ABOUT TECHNOLOGY</h2>
-        <p>Technology has taken over every aspect of our lives, transforming communication, shopping, and even the appreciation of art. In recent years, there has been a significant change in the watch sector. Digital platforms have made it possible for collectors to display their works and interact with other collectors across the world in virtual marketplaces. We can now inspect watches in previously unheard details thanks to high-resolution image and video technology. More precise identification of old watches is now possible thanks to advanced testing technology.</p>
-        <a href="pages/blog.html" class="discover-button">Discover More</a>
-    </div>
-</div>
 
-      
+    <div class="blog-preview" style="position: relative;">
+      <img src="images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
+      <div class="text-overlay">
+        <h2>ABOUT TECHNOLOGY</h2>
+        <p>Technology has taken over every aspect of our lives, transforming communication, shopping, and even the
+          appreciation of art. In recent years, there has been a significant change in the watch sector. Digital
+          platforms have made it possible for collectors to display their works and interact with other collectors
+          across the world in virtual marketplaces. We can now inspect watches in previously unheard details thanks to
+          high-resolution image and video technology. More precise identification of old watches is now possible thanks
+          to advanced testing technology.</p>
+        <a href="pages/blog.html" class="discover-button">Discover More</a>
+      </div>
+      <div class="article-title">Interesting Articles</div>
+    </div>
+    <div class="video-preview" style="position: relative;">
+      <video class="background-video" autoplay muted loop>
+        <source src="images/watches/bg2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="video-overlay">
+
+        <h2>Our Inspiratios</h2>
+        <p>Our website proudly reflects a dedication to quality in design, functionality, and customer experience by
+          incorporating subtle ideas from some of the most successful watch brands. We sincerely appreciate these
+          industry-leading references, which have enabled us to improve our services and features in order to better
+          serve our esteemed clients. We aim to provide a smooth, advanced, and customer-focused platform that maintains
+          the highest levels of quality and innovation by taking inspiration from the best. We truly value the impact of
+          these prestigious businesses since their history motivates us to provide an outstanding experience.</p>
+        <a href="pages/research.html" class="discover-button">REFERENCES</a>
+      </div>
+    </div>
+
+    <div class="portfolio-section">
+      <div class="portfolio-title">PORTFOLIO<br>overview</div>
+
+      <div class="portfolio-images">
+        <a href="/cv/sleshma.html" class="portfolio-link">
+          <img src="images/photo/pp.jpg" alt="Sleshma" class="circular-image">
+        </a>
+        <a href="/cv/reason.html" class="portfolio-link">
+          <img src="images/photo/reason.jpg" alt="REASON" class="circular-image">
+        </a>
+      </div>
+
+      <a href="about-us.html" class="arrow-link">TO VISIT PORTFOLIOS OF OTHER MEMBERS
+        <span class="arrow">→</span>
+      </a>
+    </div>
+
   </div>
 
-    <footer class="footer">
-      <table class="footer-table">
-          <tr>
-              <td>
-                  <h3>Quick Links</h3>
-                  <ul>
-                      <li><a href="h2.html">Home</a></li>
-                      <li><a href="products.html">Products</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="research.html">Research</a></li>
-                      <li><a href="aboutus.html">About us</a></li>
-                  </ul>
-              </td>
+  <footer class="footer">
+    <table class="footer-table">
+      <tr>
+        <td>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="h2.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+          </ul>
+        </td>
 
-              <td>
-                  <h3>Customer Service</h3>
-                  <ul>
-                      <li><a href="pages/aboutus.html">FAQs</a></li>
-                      <li><a href="pages/products.html">Warranty</a></li>
-                      <li><a href="pages/products.html">Shipping & Returns</a></li>
-                      <li><a href="pages/aboutus.html">Contact Us</a></li>
-                      <li><a href="pages/aboutus.html">Help</a></li>
-                  </ul>
-              </td>
-              <td>
-                  <h3>Follow Us</h3>
-                  <div class="sns">
-                      <a href="https://www.facebook.com" target="_blank">
-                          <img src="images/icons8-facebook-logo-48.png" alt="Facebook"></a>
-                      <a href="https://instagram.com" target="_blank">
-                          <img src="images/icons8-instagram-logo-48.png" alt="Instagram"></a>
-                      <a href="https://www.youtube.com" target="_blank">
-                          <img src="images/linkedin-log.png" alt="linkedin"></a>
-                      <a href="https://www.x.com" target="_blank">
-                          <img src="images/icons8-x-logo-50.png" alt="X"></a>
-                  </div>
-              </td>
-          </tr>
+        <td>
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="pages/aboutus.html">FAQs</a></li>
+            <li><a href="pages/products.html">Warranty</a></li>
+            <li><a href="pages/products.html">Shipping & Returns</a></li>
+            <li><a href="pages/aboutus.html">Contact Us</a></li>
+            <li><a href="pages/aboutus.html">Help</a></li>
+          </ul>
+        </td>
+        <td>
+          <h3>Follow Us</h3>
+          <div class="sns">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/linkedin-log.png" alt="linkedin"></a>
+            <a href="https://www.x.com" target="_blank">
+              <img src="images/icons8-x-logo-50.png" alt="X"></a>
+          </div>
+        </td>
+      </tr>
 
-          <tr>
-              <td class="footer-end" colspan="3">
-                  <p> &copy;NovaTime 2025. All Rights Reserved.</p>
-              </td>
-          </tr>
+      <tr>
+        <td class="footer-end" colspan="3">
+          <p> &copy;NovaTime 2025. All Rights Reserved.</p>
+        </td>
+      </tr>
 
-      </table>
-    </footer>
+    </table>
+  </footer>
 
-    <script src="scripts/index.js" type="module"></script>
-  </body>
+  <script src="scripts/index.js" type="module"></script>
+</body>
+
 </html>
