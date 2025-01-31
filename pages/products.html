@@ -92,7 +92,7 @@
     </style>
     <link rel="stylesheet" href="../styles/index.css">
   </head>
-  <body onload="renderProducts();" style="
+  <body style="
     background-image: url(../images/website-background.jpg);
   ">
     <nav style="
@@ -117,15 +117,17 @@
       <div class="slides slides-js" style="opacity: 1;
         position: relative;
         ">
-        <img class="slide-image" src="../images/slide1.jpg" width="100%" height="440px" style="object-fit: cover;">
+        <img class="slide-image" src="../images/ad/slide1.jpg" width="100%" height="440px" style="object-fit: cover;">
         <button class="next-slide">&#11166;</button>
         <button class="prev-slide">&#11164;</button>
-      <div class="products-heading" style="
-          text-align: center;
-          font-size: 26px;
-          font-weight: 600;
-        ">Our Products
       </div>
+
+      <div class="products-heading" style="
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+      ">Our Products</div>
+
       <div class="categories" style="
         display: flex;
         justify-content: end;
@@ -263,21 +265,6 @@
       
         <div class="product-container">
           <img class="product-image" src="../images/watches/rolex-bubble-back.jpg">
-          <div class="product-details-layer">
-            <button class="action-button buy-button" style="
-              position: absolute;
-              bottom: 0;
-              right: 0;
-            " onclick="alert('Added To Cart!')">
-              <img src="../images/icons/cart-icon.svg" height="100%" style="
-                object-fit: cover;
-              ">
-            </button>
-          </div>
-        </div>
-      
-        <div class="product-container">
-          <img class="product-image" src="../images/watches/rolexDatejust.jpg">
           <div class="product-details-layer">
             <button class="action-button buy-button" style="
               position: absolute;

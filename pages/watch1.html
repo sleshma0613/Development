@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nova Times</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="E-Commerce Website For Watches">
+    <meta name="keywords" content="watch, classic, smart">
+    <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      a {
+        text-decoration: none;
+        font-family: serif;
+        color: white;
+        font-size: 21px;
+        font-weight: 500;
+        flex: 1;
+        transition: color 0.44s;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:hover {
+        color: gold;
+      }
+      
+      .footer {
+        text-align: center;
+        margin: 0;
+        background-color: rgba(189,131,52,255);
+        display: flex;
+        width: 100%;
+      }
+
+      .footer-table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer-table p {
+        font-size: 15px;
+        font-family: serif;
+        text-align: center;
+      }
+
+      .footer-table td {
+        margin-bottom: 10px;
+        vertical-align: top;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+      .footer-table ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-table ul li {
+        margin-bottom: 10px;
+      }
+
+      .sns {
+        gap: 10px;
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        flex-direction: column;
+      }
+
+      .sns a,
+      .sns img {
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer h3 {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: serif;
+      }
+
+      .footer-end {
+        text-align: center;
+        /* Center the copyright text */
+      }
+    </style>
+    <link rel="stylesheet" href="../styles/index.css">
+  </head>
+  <body style="
+    background-image: url(../images/website-background.jpg);
+  ">
+    <nav style="
+        background-color: rgba(40, 40, 42, 255);
+        height: 71px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      ">
+      <a class="logo-container" href="#">
+        <img class="company-logo" src="../images/logo.png">
+      </a>
+      <a href="../index.html">HOME</a>
+      <a href="../pages/products.html">PRODUCTS</a>
+      <a href="../pages/blog.html">BLOG</a>
+      <a href="../pages/research.html">RESEARCH</a>
+      <a href="../pages/aboutus.html">ABOUT US</a>
+      <a href="../pages/form.html"><button class="login-button">Login</button></a>
+    </nav>
+
+    <section class="product-section">
+      <div class="image-container">
+        <img src="../images/watches/Home_SP_Pilot_KV_Push.avif">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <table class="footer-table">
+        <tr>
+            <td>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="h2.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </td>
+
+            <td>
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="pages/aboutus.html">FAQs</a></li>
+                    <li><a href="pages/products.html">Warranty</a></li>
+                    <li><a href="pages/products.html">Shipping & Returns</a></li>
+                    <li><a href="pages/aboutus.html">Contact Us</a></li>
+                    <li><a href="pages/aboutus.html">Help</a></li>
+                </ul>
+            </td>
+            <td>
+                <h3>Follow Us</h3>
+                <div class="sns">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="../images/linkedin-log.png" alt="linkedin"></a>
+                    <a href="https://www.x.com" target="_blank">
+                        <img src="../images/icons8-x-logo-50.png" alt="X"></a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="footer-end" colspan="3">
+                <p> &copy;NovaTime 2025. All Rights Reserved.</p>
+            </td>
+        </tr>
+
+      </table>
+    </footer>
+
+    <script src="scripts/index.js" type="module"></script>
+  </body>
+</html>

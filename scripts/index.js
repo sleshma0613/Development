@@ -112,23 +112,23 @@ let products = [
   let imageIndex = 1;
 
   function nextSlide() {
-    if (imageIndex < 3) {
+    if (imageIndex < 6) {
       imageIndex++;
-      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+      slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
       
     } else {
       imageIndex = 1;
-      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+      slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
     }
   };
 
   function prevSlide() {
     if (imageIndex > 1) {
       imageIndex--;
-      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+      slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
     } else {
-      imageIndex = 3;
-      slideImageElement.src = `../images/slide${imageIndex}.jpg`;
+      imageIndex = 6;
+      slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
     }
   };
 
@@ -139,10 +139,6 @@ let products = [
   document.querySelector(".prev-slide").addEventListener('click', () => {
     prevSlide();
   });
-
-//exposing functions to the global window object so it can be accessed by the onload attribute while loading webpages
-window.renderFeaturedProducts = renderFeaturedProducts;
-window.renderProducts = renderProducts;
 
 function showProductDetails() {
   
