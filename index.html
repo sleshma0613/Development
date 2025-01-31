@@ -64,6 +64,52 @@
             text-decoration: none;
             border-radius: 5px;
         }
+        .blog-preview {
+          position: relative; /* Position relative to allow absolute positioning of child elements */
+    max-width: 100%; /* Ensure the container does not exceed the width of its parent */
+    margin: 50px auto; /* Center the container */
+}
+            text-align: center;
+        }
+        .blog-preview h2 {
+            font-size: 28px;
+            color: #8a5a44;
+        }
+        .blog-preview p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+            display: inline;
+        }
+        .read-more {
+            display: inline;
+            margin-left: 5px;
+            background: none;
+            color: #8a5a44;
+            font-size: 16px;
+            text-decoration: underline;
+            border: none;
+            cursor: pointer;
+        }
+        .background-image {
+    width: 100%; 
+    height: 20%; 
+     
+
+}
+
+
+.text-overlay {
+    position: absolute; /* Position the text overlay absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px; /* Padding around the text */
+    
+}
         
       .footer {
         text-align: center;
@@ -160,44 +206,11 @@
       </div>
       
 </div>
+
     
 
     <div class="intro">
-      <div class="brief-intro" style="
-          font-family: serif;
-          font-size: 26px;
-          font-weight: 600;
-          margin: 30px 20px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-        ">
-        <p style="
-          width: 530px;
-        ">
-          Welcome to <strong>Nova Times</strong>, where timeless elegance meets modern craftsmanship. Guided by our slogan, <italic>Where Luxury Meets Precision</italic>, we bring you a curated selection of vintage-style and gold watches that exude sophistication and charm. Whether you're seeking a statement piece or a daily accessory, our collection combines classic aesthetics with unparalleled quality, ensuring every moment is extraordinary. Explore Nova Times and discover watches that stand the test of time.
-        </p>
-        <img src="images/slide1.jpg" height="350px" style="border-radius: 8px;">
-      </div>
-
-      <div class="brief-history" style="
-        font-family: serif;
-        font-size: 26px;
-        font-weight: 600;
-        margin: 30px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      ">
-        <img src="images/slide2.jpg" height="350px" style="margin-top: 100px; border-radius: 8px;">
-        <div style="
-          width: 600px;
-        ">
-          <h2>HOW WE STARTED</h2>
-          Nova Times began with a simple yet profound passion for timeless craftsmanship and vintage elegance. Our founders, lifelong enthusiasts of classic watchmaking, envisioned a brand that celebrates the artistry and precision of traditional timepieces while catering to modern tastes. Starting as a small boutique dedicated to sourcing rare, vintage-inspired designs, we grew through an unwavering commitment to quality and a deep appreciation for the stories behind each watch. Today, Nova Times stands as a testament to that vision, offering a collection that blends heritage with luxury, bringing our love for exceptional timekeeping to your wrist.
-        </div>
-      </div>
-    </div>
+      
     
     <section class="highlights">
       <div class="featured-collection">
@@ -205,6 +218,14 @@
         <div class="featured-catalogue featured-catalogue-js"></div>
       </div>
     </section>
+    <div class="blog-preview">
+      <img src="../images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
+      <div class="text-overlay">
+          <h2>About Technology</h2>
+          <p>Technology has taken over every aspect of our lives, transforming communication, shopping, and even the appreciation of art. In recent years, there has been a significant change in the watch sector. Digital platforms have made it possible for collectors to display their works and interact with other collectors across the world in virtual marketplaces.</p>
+          <a href="pages/blog.html" class="read-more">Continue Reading</a>
+      </div>
+  </div>
 
     <footer class="footer">
       <table class="footer-table">
