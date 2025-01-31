@@ -74,6 +74,10 @@ body {
   font-weight: 500;
   color: gold;
 }
+.featured-heading{
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
 
 .featured-catalogue, .products-catalogue {
   display: grid;
