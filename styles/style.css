@@ -102,6 +102,14 @@ body {
     text-align: justify;
    
 }
+.content2 img{
+    width: 95%;
+    height: 400px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin:10px;
+    
+}
 .content2{
     font-size: 20px;
     border-radius: 8px;
