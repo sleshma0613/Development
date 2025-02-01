@@ -105,12 +105,16 @@ body {
   opacity: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.44);
+  background-color: rgba(0, 0, 0, 0.646);
   color: gold;
   width: 100%;
   height: 0;
+  font-family: Helvetica, Arial;
   border-radius: 8px;
   transition: height 0.62s, opacity 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .featured-product:hover, .product-container:hover{
@@ -122,6 +126,21 @@ body {
 .featured-product:hover .product-details-layer, .product-container:hover .product-details-layer{
   opacity: 1;
   height: 100%;
+}
+
+.product-name-preview, .product-description-preview {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0 17px;
+}
+
+.product-description-preview {
+  font-size: 17px;
+  color: #cdcdcd;
+  width: 70%;
+  text-align: center;
+  line-height: 24px;
 }
 
 .product-image {
