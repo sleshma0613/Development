@@ -8,9 +8,9 @@
   <meta name="keywords" content="watch, classic, smart">
   <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <style>/* inteternal css */
-    a {/*css for text */
+
+  <style>
+    a {
       text-decoration: none;
       font-family: serif;
       color: white;
@@ -25,11 +25,11 @@
       align-items: center;
     }
 
-    a:hover {/* changes color when cursor is placed over it */
+    a:hover {
       color: gold;
     }
 
-    .dark-overlay {/* creating a slight opacity background for more visibility of text */
+    .dark-overlay {
       position: absolute;
       top: 0;
       left: 0;
@@ -38,7 +38,7 @@
       background-color: rgba(0, 0, 0, 0.344);
     }
 
-    .overlay-text {/* text over the background video */
+    .overlay-text {
       position: absolute;
       top: 80%;
       left: 50%;
@@ -52,13 +52,12 @@
       text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
     }
 
-    .overlay-text h1 {/* header text overlay */
+    .overlay-text h1 {
       margin-top: 10px;
       font-size: 70px;
     }
-    
 
-    .explore-button {/* internal link button that takes to product page */
+    .explore-button {
       display: inline-block;
       margin-top: -5px;
       padding: 15px 10px;
@@ -70,8 +69,7 @@
       text-decoration: none;
       border-radius: 5px;
     }
-    /* END OF TOP VIDEO IMAGE SECTION CSS */
-/* START OF CSS FOR BLOG OVERVIEW */
+
     .blog-preview {
       position: relative;
       width: 100%;
@@ -80,7 +78,7 @@
       overflow: hidden;
     }
 
-    .background-image {/* background image for blog overview */
+    .background-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -104,41 +102,48 @@
       /* Place it above the background image but below the text */
     }
 
-    .article-title {/* header for blog preview */
+    .article-title {
       position: absolute;
       top: 200px;
+      /* Adjust as needed */
       margin-left: 45%;
       font-size: 20px;
+      /* Slightly larger than the paragraph */
       color: white;
+      /* Text color */
       font-weight: bold;
+      /* Make it bold */
       z-index: 2;
+      /* Ensure it is above the overlay */
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-      
+      /* Optional: Add a shadow for better readability */
     }
 
-    .text-overlay {/* text over the background */
+    .text-overlay {
       position: relative;
+      /* Keep it relative to stack above the overlay */
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
+      /* Text color remains white */
       max-width: 600px;
       z-index: 2;
-      
+      /* Ensure text is above the overlay */
     }
 
-    .text-overlay h2 {/* overlay text header */
+    .text-overlay h2 {
       font-size: 40px;
       margin-bottom: 20px;
     }
 
-    .text-overlay p {/* overlay text paragraph*/
+    .text-overlay p {
       font-size: 18px;
       line-height: 28px;
     }
 
-    .discover-button {/* button on click takes to blog page */
+    .discover-button {
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
@@ -149,21 +154,20 @@
       transition: 0.3s ease-in-out;
     }
 
-    .discover-button:hover {/* changes color when cursor is placed over it */
+    .discover-button:hover {
       background: white;
       color: black;
     }
-    /* END OF CSS FOR BLOG OVERVIEW */
 
-/* START OF CSS FOR RESEARCH OVERVIEW */
     .video-preview {
       position: relative;
       width: 100%;
       height: 800px;
+      /* Fixed height */
       overflow: hidden;
     }
 
-    .background-video {/* video as background*/
+    .background-video {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -171,7 +175,7 @@
       top: 0;
       left: 0;
       z-index: -1;
-      
+      /* Keep the video behind everything */
     }
 
     .video-preview::before {
@@ -182,36 +186,40 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
+      /* Black overlay with 50% opacity */
       z-index: 1;
-      
+      /* Place it above the video but below the text */
     }
 
-    .video-overlay {/* video to be overlay */
+    .video-overlay {
       position: relative;
+      /* Keep it relative to stack above the overlay */
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
+      /* Center all text within the overlay */
       color: white;
+      /* Text color remains white */
       max-width: 600px;
       z-index: 2;
-      
+      /* Ensure text is above the overlay */
     }
 
-    .video-overlay h2 {/* header for text over the video */
+    .video-overlay h2 {
       font-size: 40px;
+      /* Heading font size */
       margin-bottom: 20px;
-      
+      /* Space below the heading */
     }
 
-    .video-overlay p {/* paragraph over the video */
+    .video-overlay p {
       font-size: 18px;
+      /* Paragraph font size */
       line-height: 28px;
-      
+      /* Line height for paragraph */
     }
-/*END OF CSS FOR RESEARCH OVERVIEW */
 
-/*START OF CSS FOR ABOUT US OVERVIEW */
     .portfolio-section {
       display: flex;
       padding: 20px;
@@ -224,20 +232,20 @@
       font-weight: bold;
     }
 
-    .portfolio-images {/* images of group members */
+    .portfolio-images {
       display: flex;
       gap: 35px;
-      
+      /* Space between images */
     }
 
-    .circular-image {/* circular image that is linked to cv */
+    .circular-image {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
     }
 
-    .arrow-link {/* link that is linked to about us page */
+    .arrow-link {
       margin-right: 100px;
       font-size: 14px;
       font-weight: bold;
@@ -245,12 +253,10 @@
       color: black;
     }
 
-    .arrow-link:hover {/* change in color when cursor is placed over it */
+    .arrow-link:hover {
       color: rgb(223, 252, 2);
     }
-/* END OF ABOUT US PAGE OVERVIEW */
 
-/*START OF CSS FOR FOOTER  */
     .footer {
       text-align: center;
       margin: 0;
@@ -258,8 +264,8 @@
       display: flex;
       width: 100%;
     }
-/* alignment of table*/
-    .footer-table {/
+
+    .footer-table {
       width: 100%;
       margin: 0;
       padding: 0;
@@ -297,7 +303,7 @@
     }
 
     .sns a,
-    .sns img {/* external social media link  */
+    .sns img {
       margin: 0;
       padding: 0;
     }
@@ -310,7 +316,7 @@
 
     .footer-end {
       text-align: center;
-      
+      /* Center the copyright text */
     }
   </style>
   <link rel="stylesheet" href="styles/index.css">
@@ -488,8 +494,10 @@
               <img src="images/icons8-facebook-logo-48.png" alt="Facebook"></a>
             <a href="https://instagram.com" target="_blank">
               <img src="images/icons8-instagram-logo-48.png" alt="Instagram"></a>
-            <a href="https://www.youtube.com" target="_blank">
-              <img src="images/linkedin-log.png" alt="linkedin"></a>
+            <a href="https://youtube.com/" target="_blank">
+              <img src="../images/YouTube-icon.png" alt="Youtube"></a>
+            <a href="https://np.linkedin.com/" target="_blank">
+              <img src="images/linkedin-log.png" alt="Linkedin"></a>
             <a href="https://www.x.com" target="_blank">
               <img src="images/icons8-x-logo-50.png" alt="X"></a>
           </div>
