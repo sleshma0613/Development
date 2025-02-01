@@ -20,6 +20,8 @@
         }
 
         /*css for pop up linking survey form*/
+        /* css for feedback popup starts
+        */
         .popup {
             display: none;
             position: fixed;
@@ -38,6 +40,7 @@
             margin-left: 30%;
         }
 
+        /*css for content within the popup */
         .popup-content {
             background-color: #f5f3f2;
             padding: 20px;
@@ -47,7 +50,7 @@
             /* Ensure the content is above the popup background */
         }
 
-
+        /*css for cross button in pop up*/
         .close {
             color: #aaa;
             float: right;
@@ -56,6 +59,7 @@
         }
 
         .close:hover,
+        /*hover effect for close button*/
         .close:focus {
             color: rgb(247, 3, 3);
 
@@ -63,6 +67,7 @@
         }
 
         .survey-button {
+            /*css for feedback button on popup*/
             background-color: hsl(30, 39%, 49%);
             border: none;
             color: white;
@@ -76,15 +81,17 @@
             border-radius: 5px;
         }
 
-        /*css for nav bar */
 
+        /*css for nav bar STARTS */
         nav a {
+            /*text in nav*/
             color: #fcfcfc;
             text-decoration: none;
 
         }
 
         .company-logo {
+            /*css for logo in nav */
             width: 130px;
             border-radius: 100%;
             object-fit: cover;
@@ -97,6 +104,7 @@
         }
 
         .nav-links {
+            /*nav link that links to different pages within the website*/
             list-style: none;
             display: flex;
             /* Align items in a row */
@@ -108,8 +116,28 @@
 
         }
 
+        .nav-links li {
+            /*nav bar links*/
+            margin: 55px;
+        }
+
+        .nav-links a {
+            /*text in nav links*/
+            text-decoration: none;
+            color: rgb(11, 11, 11);
+            font-size: 18px;
+            transition: color 0.3s;
+
+        }
+
+        .nav-links a:hover {
+            /*change in color when cursor is placed above it */
+            color: #ffcc00;
+        }
+
 
         .login-button {
+            /*login button link */
             border: none;
             background: transparent;
             font-family: serif;
@@ -121,73 +149,15 @@
         }
 
         .login-button:hover {
+            /*change in color when cursor is placed above it */
             color: gold;
         }
 
-        .nav-links li {
-            margin: 55px;
-        }
+        /*END OF NAV BAR CSS*/
 
-        .nav-links a {
-            text-decoration: none;
-            color: rgb(11, 11, 11);
-            font-size: 18px;
-            transition: color 0.3s;
-          
-        }
-
-        .nav-links a:hover {
-            color: #ffcc00;
-        }
-
-
-        .grpMemb {
-            text-align: center;
-            margin-top: -700px;
-            padding-top: 0;
-
-        }
-
-        .members {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            /* Allow wrapping to the next line */
-            gap: 20px;
-            padding-bottom: 140px;
-
-
-        }
-
-
-        .card {
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 250px;
-            height: 350px;
-            transition: transform 0.2s;
-            cursor: pointer;
-            
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card img {
-            width: 100%;
-            height: 300px;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-            object-fit: cover;
-        }
-
-        .card-content {
-            padding: -10px;
-        }
-
+        /*START OF CSS FOR ABOUT US SECTION*/
         a {
+            /*text css for about us section*/
             text-decoration: none;
             font-family: serif;
             color: black;
@@ -205,6 +175,7 @@
         }
 
         section::before {
+            /*css for about us section*/
             content: "";
             position: absolute;
             top: 0;
@@ -219,6 +190,63 @@
             color: gold;
         }
 
+
+
+        /*CSS FOR GRP MEMBER SECTION CONSISTS PORTFOLIO OF EACH MEMBER STARTS FROM HERE*/
+        .grpMemb {
+            text-align: center;
+            margin-top: -700px;
+            padding-top: 0;
+
+        }
+
+        .members {
+            /*members discription */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Allow wrapping to the next line */
+            gap: 20px;
+            padding-bottom: 140px;
+
+
+        }
+
+
+        .card {
+            /*card that carries the information of members */
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            height: 350px;
+            transition: transform 0.2s;
+            cursor: pointer;
+
+        }
+
+        .card:hover {
+            /*change in color when cursor is placed above it */
+            transform: scale(1.05);
+        }
+
+        .card img {
+            /*img of member in card */
+            width: 100%;
+            height: 300px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            /*content within card */
+            padding: -10px;
+        }
+
+        /*END OF GRP MEMBER CONTENT CSS*/
+
+        /*START OF FOOTER SECTION*/
         .footer {
             text-align: center;
             margin: 0;
@@ -229,18 +257,21 @@
         }
 
         .footer-table {
+            /*table alighnment for footer*/
             width: 100%;
             margin: 0;
             padding: 0;
         }
 
         .footer-table p {
+            /*paragraph in footer*/
             font-size: 15px;
             font-family: serif;
             text-align: center;
         }
 
         .footer-table td {
+            /*table css*/
             margin-bottom: 10px;
             vertical-align: top;
             padding: 10px;
@@ -248,16 +279,19 @@
         }
 
         .footer-table ul {
+            /*table css*/
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
         .footer-table ul li {
+            /*footer links */
             margin-bottom: 10px;
         }
 
         .sns {
+            /*social media */
             gap: 10px;
             display: flex;
             justify-content: left;
@@ -279,13 +313,17 @@
 
         .footer-end {
             text-align: center;
-              }
+        }
+
+        /*END OF CSS FOR FOOTER SECTION*/
+        /*END OF INTERNAL CSS*/
     </style>
 </head>
 
 
-<body>
-    <nav style="
+<body><!--BODY STARTS -->
+    <!-- NAV BAR -->
+    <nav style=" 
        background-color:rgba(40,40,42,255);
        
         height: 71px;px;
@@ -303,56 +341,59 @@
         <a href="#">ABOUT US</a>
         <a href="../pages/form.html"><button class="login-button">Login</button></a>
     </nav>
+    <!--  POP UP  -->
     <div id="popup" class="popup">
         <div class="popup-content">
             <span class="close" id="closeBtn">&times;</span>
             <h2>Can you spare a minute?</h2>
             <p>Help us by answering some questions for better customer service.</p>
-            <a href="../pages/survey.html"> <button class="survey-button" id="surveyBtn">Survey Form</button></a>
+            <a href="../pages/survey.html"> <button class="survey-button" id="surveyBtn">Feedback Form</button></a>
         </div>
 
     </div>
 
-
+    <!-- ABOUT US SECTION -->
     <section
         style="background: url('../images/watchb2.jpg') center/cover no-repeat; padding: 100px 0px; text-align: center; color: white; position: relative; font-family: 'Times New Roman', serif;background-attachment: fixed;  background-position: center; background-repeat: no-repeat; background-size: cover; ">
         <div style="background: rgba(0, 0, 0, 0); width: 100%; height: 100%; position: absolute; top: 0; left: 0;">
+            <!--INTERNAL CSS -->
         </div>
-        <div style="position: relative; z-index: 1; max-width: 800px; margin: auto; padding: 50px;">
+        <div style="position: relative; z-index: 1; max-width: 800px; margin: auto; padding: 50px;"><!--INTERNAL CSS -->
             <h2 style="font-size: 48px; font-weight: bold;">ABOUT US</h2>
             <h3 style="font-size: 36px; font-weight: bold; margin-bottom: 20px;">Where Every Second Shines Bright</h3>
-            <p style="font-size: 22px; margin-bottom: 20px; line-height: 1.6;">
+            <p style="font-size: 22px; margin-bottom: 20px; line-height: 1.6;"><!--INTERNAL CSS -->
                 <strong>NovaTime</strong> is an innovative e-commerce platform launched in 2025, dedicated to offering
                 high-quality watches while revolutionizing the way you shop for timepieces.
             </p>
-            <p style="font-size: 22px; margin-bottom: 20px; line-height: 1.6;">
+            <p style="font-size: 22px; margin-bottom: 20px; line-height: 1.6;"><!--INTERNAL CSS -->
                 We assist our customers in finding the perfect fit for their style, making their wrist more elegant and
                 luxurious. Searching for your dream timepiece can feel overwhelming, but we simplify the process,
                 ensuring it's a memorable experience with NovaTime.
             </p>
             <p style="font-size: 24px; font-weight: bold; margin-bottom: 30px;">We do the searching. You do the styling.
-            </p>
+            </p><!--INTERNAL CSS -->
+            <!--INTERNAL LINK -->
             <a href="/pages/products.html"
                 style="display: inline-block; padding: 12px 24px; font-size: 22px; color: white; border: 2px solid white; text-decoration: none; transition: 0.3s; background: rgba(255, 255, 255, 0.2);">
                 Explore Our Collection
             </a>
         </div>
-    </section>
+    </section><!--END OF ABOUT US SECTION -->
 
     </div>
-    <div style="height: 100vh; background-color: rgb(246, 230, 212)">
+    <div style="height: 100vh; background-color: rgb(246, 230, 212)"><!--INTERNAL CSS -->
 
     </div>
-    <div class="grpMemb">
+    <div class="grpMemb"><!--GROUP MEMBER SECTION -->
         <h1><u>GROUP MEMBERS</u></h1>
         <p>we've attached every individuals cv's below<br>
             PLEASE CLICK TO VIEW</p>
 
     </div>
     <div class="members">
-        <a href="../cv/adwaita_cv.html">
+        <a href="../cv/adwaita_cv.html"><!--INTERNAL LINK -->
             <div class="card">
-                <img src="../images/user-icon--png.webp" alt="Adwaita Joshi">
+                <img src="../images/photo/adwaita.jpeg" alt="Adwaita Joshi">
                 <div class="card-content">
                     <h2>Adwaita Joshi</h2>
                 </div>
@@ -379,21 +420,76 @@
         </a>
 
         <div class="card">
-            <img src="../images/user-icon--png.webp" alt="Krisha">
+            <img src="../images/photo/KRISHA.jpg" alt="Krisha">
             <div class="card-content">
                 <h2>Krisha Poudel </h2>
             </div>
             <a href="../cv/aryancv.html">
         </div>
         <div class="card">
-            <img src="../images/user-icon--png.webp" alt="Aryan">
+            <img src="../images/photo/ARYAN.jpg" alt="Aryan">
             <div class="card-content">
                 <h2>Aryan Panday</h2>
             </div>
-        </div>
+        </div><!--END OF MEMBER PORTFOLIO CONTENT -->
         </a>
     </div>
-    <script>/*js for survey form pop up*/
+    <!--START OF FOOTER CONTENT -->
+    <footer class="footer">
+        <table class="footer-table">
+            <tr>
+                <td>
+                    <h3>Quick Links</h3>
+                    <ul><!--INTERNAL LINK -->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </td>
+
+                <td>
+                    <h3>Customer Service</h3>
+                    <ul><!--INTERNAL LINK -->
+                        <li><a href="../pages/aboutus.html">FAQs</a></li>
+                        <li><a href="../pages/products.html">Warranty</a></li>
+                        <li><a href="../pages/products.html">Shipping & Returns</a></li>
+                        <li><a href="../pages/aboutus.html">Contact Us</a></li>
+                        <li><a href="../pages/aboutus.html">Help</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <h3>FollowUs</h3>
+                    <div class="sns"><!--EXTERNAL LINK -->
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+                        <a href="https://instagram.com" target="_blank">
+                            <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+                        <a href="https://youtube.com/" target="_blank">
+                            <img src="../images/YouTube-icon.png" alt="Youtube"></a>
+                        <a href="https://np.linkedin.com/" target="_blank">
+                            <img src="../images/linkedin-log.png" alt="Linkedin"></a>
+                        <a href="https://www.x.com" target="_blank">
+                            <img src="../images/icons8-x-logo-50.png" alt="X"></a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="footer-end" colspan="3">
+                    <p> &copy;NovaTime 2025. All Rights Reserved.</p>
+                </td>
+            </tr>
+
+        </table>
+    </footer>
+    <!--END OF FOOTER CONTENT -->
+
+
+
+    <!--INTERNAL JS -->
+    <script>/* js for survey form pop up*/
         var popup = document.getElementById("popup");
 
         // Get the <span> element that closes the modal
@@ -428,54 +524,8 @@
             window.open(cvPath, '_blank');
         }
     </script>
+    <!--END OF INTERNAL JS -->
 
-    <footer class="footer">
-        <table class="footer-table">
-            <tr>
-                <td>
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="h2.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="research.html">Research</a></li>
-                        <li><a href="aboutus.html">About us</a></li>
-                    </ul>
-                </td>
-
-                <td>
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="../pages/aboutus.html">FAQs</a></li>
-                        <li><a href="../pages/products.html">Warranty</a></li>
-                        <li><a href="../pages/products.html">Shipping & Returns</a></li>
-                        <li><a href="../pages/aboutus.html">Contact Us</a></li>
-                        <li><a href="../pages/aboutus.html">Help</a></li>
-                    </ul>
-                </td>
-                <td>
-                    <h3>FollowUs</h3>
-                    <div class="sns">
-                        <a href="https://www.facebook.com" target="_blank">
-                            <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
-                        <a href="https://instagram.com" target="_blank">
-                            <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
-                        <a href="https://www.youtube.com" target="_blank">
-                            <img src="../images/linkedin-log.png" alt="linkedin"></a>
-                        <a href="https://www.x.com" target="_blank">
-                            <img src="../images/icons8-x-logo-50.png" alt="X"></a>
-                    </div>
-                </td>
-            </tr>
-
-            <tr>
-                <td class="footer-end" colspan="3">
-                    <p> &copy;NovaTime 2025. All Rights Reserved.</p>
-                </td>
-            </tr>
-
-        </table>
-    </footer>
 
 
 
