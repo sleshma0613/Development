@@ -200,9 +200,10 @@
 
         }
         .grpMemb h1 {
-            font-size: 60px;
+            font-size: 80px;
+            text-decoration: none;
+            }
             
-        }
 
         .members {
             /*members discription */
@@ -246,7 +247,7 @@
         .card h2 {
             /*content within card */
             margin-top: 0px;
-            text-align: left;
+            text-align: center;
         }
 
         /*END OF GRP MEMBER CONTENT CSS*/
@@ -328,13 +329,15 @@
 
 <body><!--BODY STARTS -->
     <!-- NAV BAR -->
-    <nav style=" 
-       background-color:rgba(40,40,42,255);
-       
-        height: 71px;px;
+    <nav style="
+        background-color: rgba(40, 40, 42, 255);
+        height: 71px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
       ">
         <a class="logo-container" href="#">
             <img class="company-logo" src="../images/logo.png">
@@ -390,9 +393,8 @@
 
     </div>
     <div class="grpMemb"><!--GROUP MEMBER SECTION -->
-        <h1><u>GROUP MEMBERS</u></h1>
-        <p>we've attached every individuals cv's below<br>
-            PLEASE CLICK TO VIEW</p>
+        <h1>GROUP MEMBERS</h1>
+        
 
     </div>
     <div class="members">
