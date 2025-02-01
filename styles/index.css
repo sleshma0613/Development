@@ -208,6 +208,21 @@ body {
   color: rgb(73, 73, 73);
 }
 
+.star {
+  font-size: 44px;
+  color: rgb(70, 70, 70);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.rated-star {
+  color: rgb(75, 255, 75);
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
 .action-button {
   cursor: pointer;
   font-family: serif;
