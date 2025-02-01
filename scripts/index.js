@@ -143,3 +143,7 @@ let products = [
 function showProductDetails() {
   
 };
+
+function loadWatchPage(watchLink) {
+  window.location.assign(watchLink);
+}
