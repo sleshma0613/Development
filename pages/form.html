@@ -10,7 +10,7 @@
     <meta name="keywords" content="HTML,meta tags,form">
 
 
-    <style>
+    <style>/*internal css for login form*/
         body {
             display: flex;
             justify-content: center;
@@ -26,18 +26,18 @@
 
 
         }
-
-        .logo {
+/*css for website logo*/
+        .logo { 
             width: 200px;
             height: auto;
             /* Maintain aspect ratio */
             position: absolute;
             top: 0;
             left: 0;
-           
+
         }
 
-        .loginForm {
+        .loginForm {/*css for login form*/
             width: 390px;
             background-color: rgba(255, 255, 255, 0.7);
             opacity: 1;
@@ -46,7 +46,7 @@
 
         }
 
-        .loginForm h1 {
+        .loginForm h1 {/*css for login heading*/
             font-family: "Cinzel Decorative", serif;
             font-weight: 700;
             font-style: normal;
@@ -54,7 +54,7 @@
             text-align: center;
             margin-bottom: 50px;
             padding-top: 50px;
-          
+
         }
 
         .input {
@@ -65,9 +65,10 @@
         .input-field {
             text-align: center;
             width: 200px;
-            height: 30px;
+            height: 35px;
             font-size: 15px;
             padding: 0 25px;
+            margin-bottom: 25px;
 
 
             border: none;
@@ -77,6 +78,7 @@
 
         .loginForm.input {
             text-align: center;
+
 
         }
 
@@ -90,11 +92,8 @@
             border: 2px;
             width: 40%;
             margin-inline: 50px;
-
-
-
-
-
+            margin-left: 120px;
+            margin
         }
 
         button:hover {
@@ -105,9 +104,9 @@
 
         .forgot {
             margin-bottom: 30px;
-            margin-left: 115px;
+            margin-left: 200px;
             font-size: 15px;
-            margin-top: 18px;
+
         }
 
         .signup {
@@ -124,7 +123,7 @@
         }
     </style>
 
-    
+
 
 
 </head>
@@ -139,35 +138,27 @@
         <div class="loginForm">
             <h1>Login</h1>
             <form name="loginForm" onsubmit="return validateForm()">
+                <div class="input">
+                    <input type="text" class="input-field" name="username" placeholder="Enter your username" required>
+                </div>
 
                 <div class="input">
+                    <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+                </div>
 
+                <div class="forgot">
+                    <a href="#error">Forgot password?</a>
+                </div>
 
-                    <input type="text" class="input-field" placeholder="Enter your username  " required>
+                <button type="submit">Login</button>
 
-
-                    <br><br
-                     </div>
-                    <div class="input">
-
-
-                        <input type="password" class="input-field" placeholder="Enter Password " required>
-
-                    </div>
-                    <div class="forgot">
-                        <a href="#error">Forgot password</a>
-                    </div>
-                    <br>
-
-                    <button type="submit">Login</button>
-
-                    <br>
-                    <br>
-                    <div class="signup">
-                         <p>Dont have an account? <a href="#error">Sign up </a></p>
-                        <a href="../index.html">Back to Home</a>
-                    </div>
+                <div class="signup">
+                    <p>Don't have an account? <a href="#error">Sign up</a></p>
+                    <a href="../index.html">Back to Home</a>
+                </div>
             </form>
+        </div>
+
         </div>
         <script>
             function validateForm() {
@@ -178,6 +169,7 @@
                     return false; // submission fails
                 } else {
                     alert("YOU HAVE SUCCESSFULLY LOGGED IN");
+
                     return true; // logs in
                 }
             }
