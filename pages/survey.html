@@ -7,8 +7,108 @@
     <meta name="description" content="Website about watches">
     <meta name="keywords" content="HTML, CSS, Javascript">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="../styles/style1.css" /><!--link for external css-->
+    <!--This is internal css-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
+        body {
+            background-color: rgba(241, 188, 117, 0.631);
+            height: 100%;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            background-color: #eeba7e;
+            margin: 0;
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-family: 'Times New Roman', serif;
+            background-color: #eeba7e;
+            text-align: center;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 500px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.767);
+            border-radius: 8px;
+            margin: auto;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea,
+        select {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            display: inline-block;
+
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus {
+            background-color: #dfdcdc;
+            outline: none;
+        }
+
+
+
+        button {
+            padding: 10px 15px;
+            text-align: center;
+            border: 1px solid #000000;
+            width: 30%;
+            margin: auto;
+            background-color: #d3923c;
+            font-weight: bold;
+            border-radius: 8px;
+            color: #ffffff;
+            transition: background-color 0.3 ease;
+            /*adds transition to the button*/
+        }
+
+        button:hover {
+            background-color: #ff0000;
+            cursor: pointer;
+
+        }
+
+        a {
+            background-color: rgba(235, 107, 21, 0.836);
+            padding: 8px;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            width: fit-content;
+            border-radius: 8px;
+            display: block;
+            margin: 10px;
+
+        }
+
+        a:hover {
+            color: #001aff
+        }
+    </style>
 </head>
 
 <body>
@@ -50,21 +150,7 @@
                     <option value="analog">Analog</option>
                 </select><br>
 
-                <label for="media"><b>How did you find our website?</label></b>
-                <div class="checkbox-container">
-                    <input type="checkbox" id="tiktok" name="media" value="TikTok">
-                    <label for="tiktok">TikTok</label><br>
-                    <input type="checkbox" id="instagram" name="media" value="Instagram">
-                    <label for="instagram">Instagram</label><br>
-                    <input type="checkbox" id="facebook" name="media" value="Facebook">
-                    <label for="facebook">Facebook</label><br>
-                    <input type="checkbox" id="reddit" name="media" value="Reddit">
-                    <label for="reddit">Reddit</label><br>
-                    <input type="checkbox" id="friends" name="media" value="Friends" title="Friends">
-                    <label for="friends">Friends</label><br>
-                    <input type="checkbox" id="others-checkbox" name="media" value="Others" title="Others">
-                    <label type="others-checkbox">Others</label><br><br>
-                </div>
+
 
 
                 <label for=comment><b>Any comments or suggestions: </label></b><br>
@@ -87,51 +173,48 @@
         </footer>
     </div>
 
-    <script> function validateForm(){
-        var name = document.forms["surveyForm"]["name"].value;
-        var email = document.forms["surveyForm"]["email"].value;
-        var age = document.forms["surveyForm"]["age"].value;
-        var gender = document.forms["surveyForm"]["gender"].value;
-        var watchtype = document.forms["surveyForm"]["watchtype"].value;
-        var comment = document.forms["surveyForm"]["comment"].value;
-   
-   //get all checkboxes of media
-   var media= document.forms["surveyForm"]["media"];
-   var mediaChecked= false;
-   
-   //check if any of the checkboxes are checked
-   for(var i=0; i<media.length; i++){
-       if (media[i].checked){
-          mediaChecked = true;
-           break;
-      }
-   }
-   
-   //validate fields
-   if (name === "" || email === "" || age === "" || gender ==="" || watchtype === "" || !mediaChecked || comment ==="")
-   {
-       alert("Fields are still empty. Please fill the form."); //prevents from form submission
-       return false;
-   }
-   //email validation
-   var emailPattern =/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-       if (!emailPattern.test(email)) {
-           alert("Please enter a valid email address.");
-           return false;
-       }
-       //comment length validation
-       if (comment.length < 10) {
-           alert("Comment must be at least 10 characters long.");
-           return false;
-       }
-   else{
-       alert("Thank you for filling this survey form!"); //allows the form submissions
-       return true;
-   }
-   
-   }</script>
+    <script> function validateForm() {
+            var name = document.forms["surveyForm"]["name"].value;
+            var email = document.forms["surveyForm"]["email"].value;
+            var age = document.forms["surveyForm"]["age"].value;
+            var gender = document.forms["surveyForm"]["gender"].value;
+            var watchtype = document.forms["surveyForm"]["watchtype"].value;
+            var comment = document.forms["surveyForm"]["comment"].value;
 
+            //get all checkboxes of media
+            var media = document.forms["surveyForm"]["media"];
+            var mediaChecked = false;
 
+            //check if any of the checkboxes are checked
+            for (var i = 0; i < media.length; i++) {
+                if (media[i].checked) {
+                    mediaChecked = true;
+                    break;
+                }
+            }
+
+            //validate fields
+            if (name === "" || email === "" || age === "" || gender === "" || watchtype === "" || !mediaChecked || comment === "") {
+                alert("Fields are still empty. Please fill the form."); //prevents from form submission
+                return false;
+            }
+            //email validation
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+            //comment length validation
+            if (comment.length < 10) {
+                alert("Comment must be at least 10 characters long.");
+                return false;
+            }
+            else {
+                alert("Thank you for filling this survey form!"); //allows the form submissions
+                return true;
+            }
+        }
+    </script>
 </body>
 
 </html>
