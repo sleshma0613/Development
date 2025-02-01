@@ -112,7 +112,7 @@ let products = [
   let imageIndex = 1;
 
   function nextSlide() {
-    if (imageIndex < 6) {
+    if (imageIndex < 5) {
       imageIndex++;
       slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
       
@@ -127,7 +127,7 @@ let products = [
       imageIndex--;
       slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
     } else {
-      imageIndex = 6;
+      imageIndex = 5;
       slideImageElement.src = `../images/ad/slide${imageIndex}.jpg`;
     }
   };
