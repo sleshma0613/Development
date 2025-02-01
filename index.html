@@ -8,6 +8,7 @@
   <meta name="keywords" content="watch, classic, smart">
   <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/index.js" type="module"></script>
 
   <style>
     a {
@@ -219,43 +220,75 @@
       line-height: 28px;
       /* Line height for paragraph */
     }
+    .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .title {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 60px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            
+        }
+        .slider {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        .image-container {
+            position: relative;
+            width: 240px;
+            height: 240px;
+           
+           
+        }
+        .image-container img {
+            width: 50%;
+            height: 85%;
+            border-radius: 50%;
+            
+            position: absolute;
+            top: 0;
+            
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        img.active {
+            opacity: 1;
+        }
+        .buttons button {
+            padding: 12px 18px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+            font-size: 24px;
+            transition: background 0.3s;
+        }
+        .buttons button:hover {
+            background: #555;
+        }
+        .team-name {
+            margin-top: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .abt-us {
+            margin-top: 20px;
+            cursor: pointer;
+            color: lightblue;
+            text-decoration: underline;
+            font-size: 20px;
+        }
+        
 
-    .portfolio-section {
-      display: flex;
-      padding: 20px;
-      background-color: #f9bd64;
-    }
-
-    .portfolio-title {
-      flex: 1;
-      font-size: 34px;
-      font-weight: bold;
-    }
-
-    .portfolio-images {
-      display: flex;
-      gap: 35px;
-      /* Space between images */
-    }
-
-    .circular-image {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-
-    .arrow-link {
-      margin-right: 100px;
-      font-size: 14px;
-      font-weight: bold;
-      margin-top: 50px;
-      color: black;
-    }
-
-    .arrow-link:hover {
-      color: rgb(223, 252, 2);
-    }
+    
 
     .footer {
       text-align: center;
@@ -318,13 +351,14 @@
       text-align: center;
       /* Center the copyright text */
     }
+    
   </style>
   <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body style="
-    background-image: url(images/website-background.jpg);
-  ">
+background-image: url(images/website-background.jpg);
+">
   <nav style="
         background-color: rgba(40, 40, 42, 255);
         height: 71px;
@@ -423,22 +457,26 @@
       </div>
     </div>
 
-    <div class="portfolio-section">
-      <div class="portfolio-title">PORTFOLIO<br>overview</div>
-
-      <div class="portfolio-images">
-        <a href="/cv/sleshma.html" class="portfolio-link">
-          <img src="images/photo/pp.jpg" alt="Sleshma" class="circular-image">
-        </a>
-        <a href="/cv/reason.html" class="portfolio-link">
-          <img src="images/photo/reason.jpg" alt="REASON" class="circular-image">
-        </a>
+    <div class="container" style="background-color: #f8d774;">
+      <div class="title">NOVA TEAM</div>
+      <div class="slider">
+          <div class="buttons">
+              <button onclick="changeSlide(-1)">&#9665;</button>
+          </div>
+          <div class="image-container">
+              <img id="image1" class="active" src="/images/photo/adwaita.jpeg" alt="ADWAITA JOSHI">
+              <img id="image2" src="/images/photo/pp.jpg" alt="SLESHMA MAHARJAN">
+              <img id="image3" src="/images/photo/reason.jpg" alt="REASON POKHREL ">
+              <img id="image4" src="/images/photo/KRISHA.jpg" alt="KRISHA POUDEL">
+              <img id="image5" src="/images/photo/ARYAN.jpg" alt="ARYAN PANDEY">
+          </div>
+          <div class="buttons">
+              <button onclick="changeSlide(1)">&#9655;</button>
+          </div>
       </div>
-
-      <a href="about-us.html" class="arrow-link">TO VISIT PORTFOLIOS OF OTHER MEMBERS
-        <span class="arrow">→</span>
-      </a>
-    </div>
+      <div class="team-name" id="teamName">ADWAITA JOSHI</div>
+      <div class="abt-us" >To preview CV of our team members</div>
+  </div>
 
   </div>
 
@@ -489,8 +527,29 @@
 
     </table>
   </footer>
+  <script>
+    let index = 1;
 
-  <script src="scripts/index.js" type="module"></script>
+    function changeSlide(step) {
+        let images = document.querySelectorAll(".image-container img");
+        let currentName = document.getElementById("teamName");
+        
+        images.forEach(img => img.classList.remove("active"));
+        
+        index = index + step;
+        if (index < 1) index = images.length;
+        if (index > images.length) index = 1;
+        
+        let newImage = document.getElementById("image" + index);
+        newImage.classList.add("active");
+        currentName.innerText = newImage.alt;
+    }
+
+    function goToAboutUs() {
+        window.location.href = "about-us.html";
+    }
+</script>
+  
 </body>
 
 </html>
