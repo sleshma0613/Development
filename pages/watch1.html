@@ -134,7 +134,13 @@
         </div>
   
         <div class="product-actions">
-          <div class="rating-section"></div>
+          <div class="rating-section">
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+            <span class="star">&starf;</span>
+          </div>
           <button class="action-button buy-button" onclick="alert('Added To Cart!')">
             <img src="../images/icons/cart-icon.svg" height="100%" style="
               object-fit: cover;
@@ -191,6 +197,116 @@
 
       </table>
     </footer>
+
+    <div class="review-overlay" style="
+      position: fixed; /* Sit on top of the page content */
+      display: none; /* Hidden by default */
+      width: 100%; /* Full width (cover the whole page) */
+      height: 100%; /* Full height (cover the whole page) */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    ">
+      <div class="rating-popup" style="
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      width: 500px;
+      height: 300px;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      font-family: Helvetica, Arial;
+      border-radius: 17px;
+      padding: 10px;
+      display: flex;
+      ">
+        <div class="rating-title" style="
+          font-size: 20px;
+          font-weight: 600;
+          position: relative;
+          margin: 10px 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        ">Write Your Review
+          <span class="close-popup" id="close-popup" style="
+            font-weight: 500;
+            cursor: pointer;
+            color: red;
+            right: 20px;
+            font-size: 30px;
+            position: absolute;
+          ">&times;</span>
+        </div>
+
+        <textarea name="rating" id="rating" class="rating-text" maxlength="250" style="
+          flex: 1;
+          padding: 10px;
+          width: 80%;
+          font-size: 17px;
+          resize: none;
+        "></textarea>
+
+        <button class="submit-review action-button" style="
+          margin: 20px 0;
+          border: none;
+          padding: 10px 20px;
+          color: white;
+          font-size: 17px;
+          cursor: pointer;
+          font-family: Helvetica, Arial;
+          font-weight: 600;
+          background-color: rgb(45, 104, 220);
+          border-radius: 10px;
+        ">SUBMIT</button>
+      </div>
+    </div>
+
+    <script>
+      let stars = document.querySelectorAll(".star");
+      let reviewOverlay = document.querySelector(".review-overlay");
+      let closePopupButton = document.getElementById("close-popup");
+      let submitReviewButton = document.querySelector(".submit-review");
+      let reviewTextBox = document.querySelector(".rating-text");
+
+      stars.forEach((star, index) => {
+        star.addEventListener("mouseover", () => {
+          stars.forEach((s, i) => {
+            if (i <= index) {
+            s.style.color = "rgb(72, 255, 102)"; // Change color for hovered and previous stars
+            } else {
+            s.style.color = "rgb(70, 70, 70)"; // Reset color for others
+            }
+          });
+        });
+
+        star.addEventListener("mouseleave", () => {
+          stars.forEach((s) => {
+            s.style.color = "rgb(70, 70, 70)"; // Reset color when mouse leaves
+          });
+        });
+
+        star.addEventListener("click", () => {
+          reviewOverlay.style.display = "flex";
+          document.body.classList.add("noscroll");
+        });
+      });
+
+      closePopupButton.addEventListener("click", () => {
+        reviewOverlay.style.display = "none";
+      })
+
+      submitReviewButton.addEventListener("click", () => {
+        alert('Thank You For Your Review');
+        reviewOverlay.style.display = "none";
+        reviewTextBox.value = '';
+      })
+
+    </script>
 
     <script src="../scripts/index.js" type="module"></script>
   </body>
