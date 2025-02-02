@@ -10,7 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="scripts/index.js" type="module"></script>
 
-  <style>/*start of internal css*/
+  <style>
+    /*start of internal css*/
     a {
       text-decoration: none;
       font-family: serif;
@@ -26,11 +27,13 @@
       align-items: center;
     }
 
-    a:hover {/*change in color when cursor is placed over it*/
+    a:hover {
+      /*change in color when cursor is placed over it*/
       color: gold;
     }
 
-    .dark-overlay {/*overlay video*/
+    .dark-overlay {
+      /*overlay video*/
       position: absolute;
       top: 0;
       left: 0;
@@ -70,8 +73,9 @@
       text-decoration: none;
       border-radius: 5px;
     }
-/*END OF intro video css*/
-/*start of css for blog overview*/
+
+    /*END OF intro video css*/
+    /*start of css for blog overview*/
     .blog-preview {
       position: relative;
       width: 100%;
@@ -87,7 +91,7 @@
       top: 0;
       left: 0;
       z-index: -1;
-      
+
     }
 
     .blog-preview::before {
@@ -99,7 +103,7 @@
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 1;
-      
+
     }
 
     .article-title {
@@ -111,10 +115,11 @@
       font-weight: bold;
       z-index: 2;
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-      
+
     }
 
-    .text-overlay {/*text over background */
+    .text-overlay {
+      /*text over background */
       position: relative;
       top: 50%;
       left: 50%;
@@ -123,20 +128,23 @@
       color: white;
       max-width: 600px;
       z-index: 2;
-      /* Ensure text is above the overlay */
+
     }
 
     .text-overlay h2 {
+      /*text header */
       font-size: 40px;
       margin-bottom: 20px;
     }
 
     .text-overlay p {
+      /*text paragraph */
       font-size: 18px;
       line-height: 28px;
     }
 
     .discover-button {
+      /*internal link */
       display: inline-block;
       margin-top: 20px;
       padding: 10px 20px;
@@ -148,15 +156,16 @@
     }
 
     .discover-button:hover {
+      /*changes color */
       background: white;
       color: black;
     }
 
+    /*START OF CSS FOR RESEARCH OVERVIEW */
     .video-preview {
       position: relative;
       width: 100%;
       height: 800px;
-      /* Fixed height */
       overflow: hidden;
     }
 
@@ -168,7 +177,7 @@
       top: 0;
       left: 0;
       z-index: -1;
-      /* Keep the video behind everything */
+
     }
 
     .video-preview::before {
@@ -179,40 +188,34 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      /* Black overlay with 50% opacity */
       z-index: 1;
-      /* Place it above the video but below the text */
     }
 
     .video-overlay {
+      /*video over the background */
       position: relative;
-      /* Keep it relative to stack above the overlay */
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      /* Center all text within the overlay */
       color: white;
-      /* Text color remains white */
       max-width: 600px;
       z-index: 2;
-      /* Ensure text is above the overlay */
     }
 
     .video-overlay h2 {
       font-size: 40px;
-      /* Heading font size */
       margin-bottom: 20px;
-      /* Space below the heading */
     }
 
     .video-overlay p {
       font-size: 18px;
-      /* Paragraph font size */
       line-height: 28px;
-      /* Line height for paragraph */
     }
 
+    /*end of research overview */
+
+    /*start of about us overview */
     .container {
       display: flex;
       flex-direction: column;
@@ -233,6 +236,7 @@
     }
 
     .slider {
+      /*sliding button */
       display: flex;
       align-items: center;
       gap: 40px;
@@ -274,6 +278,7 @@
     }
 
     .buttons button:hover {
+      /*changes color when cursor is placed*/
       background: #555;
     }
 
@@ -291,9 +296,11 @@
       font-size: 20px;
     }
 
+    /*end of abt us overview */
 
 
 
+    /*start of footer*/
     .footer {
       text-align: center;
       margin: 0;
@@ -353,10 +360,10 @@
 
     .footer-end {
       text-align: center;
-      /* Center the copyright text */
+      /*end of footer css */
     }
   </style>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/index.css"><!--external css -->
 </head>
 
 <body style="
@@ -369,7 +376,7 @@ background-image: url(images/website-background.jpg);
         align-items: center;
         justify-content: space-between;
         width: 100%;
-      ">
+      "><!--nav bar -->
     <a class="logo-container" href="#">
       <img class="company-logo" src="images/logo.png">
     </a>
@@ -381,7 +388,7 @@ background-image: url(images/website-background.jpg);
     <a href="pages/form.html"><button class="login-button">Login</button></a>
   </nav>
 
-  <div class="slideshow">
+  <div class="slideshow"><!--backhround video -->
     <video width="100%" autoplay loop muted style="pointer-events: none;">
       <source src="images/watches/landing.mp4" type="video/mp4">
     </video>
@@ -393,7 +400,7 @@ background-image: url(images/website-background.jpg);
 
 
 
-  <div class="intro">
+  <div class="intro"><!--product overview -->
 
 
     <section class="highlights">
@@ -408,19 +415,25 @@ background-image: url(images/website-background.jpg);
                 Omega Speedmaster Pilot
               </div>
               <div class="product-description-preview">
-                Soaring between earth and space, OMEGA watches have enjoyed a long history in the skies. Now, to propel that legacy further, the brand proudly launches the new Speedmaster Pilot. Aimed at a new generation of pilots in flight, this 40.85 mm design follows the very same symmetrical style of the original Speedmaster from 1957.
+                Soaring between earth and space, OMEGA watches have enjoyed a long history in the skies. Now, to propel
+                that legacy further, the brand proudly launches the new Speedmaster Pilot. Aimed at a new generation of
+                pilots in flight, this 40.85 mm design follows the very same symmetrical style of the original
+                Speedmaster from 1957.
               </div>
             </div>
           </div>
 
           <div class="featured-product" onclick="window.location.assign('pages/watch2.html')">
+            <!--onclick goes to description page -->
             <img class="product-image" src="images/watches/patek-philippe-calatrava.jpg">
             <div class="product-details-layer">
               <div class="product-name-preview">
                 Patek Philippe Calatrava
               </div>
               <div class="product-description-preview">
-                Patek Philippe expands its range of elegant ladies' watches with a new version of the self-winding Calatrava Reference 4997 in rose gold decked out in purple – an original and refined color that perfectly matches the warm nuances of the precious metal and the diamond-set bezel.
+                Patek Philippe expands its range of elegant ladies' watches with a new version of the self-winding
+                Calatrava Reference 4997 in rose gold decked out in purple – an original and refined color that
+                perfectly matches the warm nuances of the precious metal and the diamond-set bezel.
               </div>
             </div>
           </div>
@@ -432,16 +445,18 @@ background-image: url(images/website-background.jpg);
                 Shein - Vintage Polygon Pointer
               </div>
               <div class="product-description-preview">
-                Elevate your style with this exquisite vintage-inspired timepiece. Featuring a sophisticated rectangular rose gold case, this watch exudes timeless charm. The dial is adorned with elegant black Roman numerals, finely detailed hands, and a textured center for a refined touch.
+                Elevate your style with this exquisite vintage-inspired timepiece. Featuring a sophisticated rectangular
+                rose gold case, this watch exudes timeless charm. The dial is adorned with elegant black Roman numerals,
+                finely detailed hands, and a textured center for a refined touch.
               </div>
             </div>
           </div>
 
         </div>
       </div>
-    </section>
-
-    <div class="blog-preview" style="position: relative;">
+    </section><!--END OF PRODUCT OVERVIEW -->
+    <!--BLOG OVERVIEW SECTION STARTS -->
+    <div class="blog-preview" style="position: relative;"><!--inline css -->
       <img src="images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
       <div class="text-overlay">
         <h2>ABOUT TECHNOLOGY</h2>
@@ -451,7 +466,7 @@ background-image: url(images/website-background.jpg);
           across the world in virtual marketplaces. We can now inspect watches in previously unheard details thanks to
           high-resolution image and video technology. More precise identification of old watches is now possible thanks
           to advanced testing technology.</p>
-        <a href="pages/blog.html" class="discover-button">Discover More</a>
+        <a href="pages/blog.html" class="discover-button">Discover More</a><!--internal link button -->
       </div>
       <div class="article-title">Interesting Articles</div>
     </div>
@@ -460,7 +475,8 @@ background-image: url(images/website-background.jpg);
         <source src="images/watches/bg2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-
+      <!--blog overview ends -->
+      <!--research overview STARTS -->
       <div class="video-overlay">
 
         <h2>Our Inspiratios</h2>
@@ -473,6 +489,8 @@ background-image: url(images/website-background.jpg);
         <a href="pages/research.html" class="discover-button">REFERENCES</a>
       </div>
     </div>
+    <!--research overview ends -->
+    <!--about us  STARTS -->
 
     <div class="container" style="background-color: #f8d774;">
       <div class="title">NOVA TEAM</div>
@@ -498,7 +516,8 @@ background-image: url(images/website-background.jpg);
     </div>
 
   </div>
-
+  <!--RESEARCH OVERVIEW ENDS -->
+  <!--FOOTER STARTS -->
   <footer class="footer">
     <table class="footer-table">
       <tr>
@@ -514,7 +533,7 @@ background-image: url(images/website-background.jpg);
         </td>
 
         <td>
-          <h3>Customer Service</h3>
+          <h3>Customer Service</h3><!--INTERNAL LINK -->
           <ul>
             <li><a href="pages/aboutus.html">FAQs</a></li>
             <li><a href="pages/products.html">Warranty</a></li>
@@ -525,7 +544,7 @@ background-image: url(images/website-background.jpg);
         </td>
         <td>
           <h3>Follow Us</h3>
-          <div class="sns">
+          <div class="sns"><!--EXTERNAL LINK -->
             <a href="https://www.facebook.com" target="_blank">
               <img src="images/icons8-facebook-logo-48.png" alt="Facebook"></a>
             <a href="https://instagram.com" target="_blank">
@@ -546,6 +565,7 @@ background-image: url(images/website-background.jpg);
 
     </table>
   </footer>
+  <!--INTERNAL JS -->
   <script>
     let index = 1;
 
