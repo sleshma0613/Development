@@ -37,7 +37,8 @@ body {
   height: 420px;
 }
 
-.next-slide, .prev-slide {
+.next-slide,
+.prev-slide {
   position: absolute;
   top: 40%;
   height: 80px;
@@ -50,7 +51,8 @@ body {
   border-radius: 8px;
 }
 
-.next-slide:hover, .prev-slide:hover {
+.next-slide:hover,
+.prev-slide:hover {
   background-color: gold;
   color: black;
 }
@@ -63,7 +65,8 @@ body {
   right: 0;
 }
 
-.featured-heading, .products-heading {
+.featured-heading,
+.products-heading {
   display: flex;
   height: 60px;
   align-items: center;
@@ -74,20 +77,23 @@ body {
   font-weight: 500;
   color: gold;
 }
-.featured-heading{
+
+.featured-heading {
   margin-top: 80px;
-  
+
   font-size: larger;
 }
 
-.featured-catalogue, .products-catalogue {
+.featured-catalogue,
+.products-catalogue {
   display: grid;
   margin: 20px 20px;
   row-gap: 17px;
   grid-template-columns: auto auto auto;
 }
 
-.featured-product, .product-container {
+.featured-product,
+.product-container {
   font-family: serif;
   display: flex;
   transition: all 0.4s;
@@ -117,18 +123,21 @@ body {
   align-items: center;
 }
 
-.featured-product:hover, .product-container:hover{
+.featured-product:hover,
+.product-container:hover {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.797);
   transform: scale(1.011);
 }
 
 /*adding a div (product-details-layer) over the targeted element when the pointer hovers over it */
-.featured-product:hover .product-details-layer, .product-container:hover .product-details-layer{
+.featured-product:hover .product-details-layer,
+.product-container:hover .product-details-layer {
   opacity: 1;
   height: 100%;
 }
 
-.product-name-preview, .product-description-preview {
+.product-name-preview,
+.product-description-preview {
   margin-top: 20px;
   font-size: 22px;
   font-weight: 600;
