@@ -8,7 +8,7 @@
   <meta name="keywords" content="watch, classic, smart">
   <meta name="author" content="Reason Pokhrel, Aryan Panday, Adwaita Joshi, Sleshma Maharjan, Krisha Poudel">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="scripts/index.js" type="module"></script>
+  <script src="../scripts/index.js" type="module"></script>
 
   <style>/*start of internal css*/
     a {
@@ -179,38 +179,38 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
-      /* Black overlay with 50% opacity */
+      
       z-index: 1;
-      /* Place it above the video but below the text */
+      
     }
 
     .video-overlay {
       position: relative;
-      /* Keep it relative to stack above the overlay */
+      
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      /* Center all text within the overlay */
+      
       color: white;
-      /* Text color remains white */
+      
       max-width: 600px;
       z-index: 2;
-      /* Ensure text is above the overlay */
+      
     }
 
     .video-overlay h2 {
       font-size: 40px;
-      /* Heading font size */
+      
       margin-bottom: 20px;
-      /* Space below the heading */
+      
     }
 
     .video-overlay p {
       font-size: 18px;
-      /* Paragraph font size */
+      
       line-height: 28px;
-      /* Line height for paragraph */
+      
     }
 
     .container {
@@ -356,11 +356,11 @@
       /* Center the copyright text */
     }
   </style>
-  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body style="
-background-image: url(images/website-background.jpg);
+background-image: url(../images/website-background.jpg);
 ">
   <nav style="
         background-color: rgba(40, 40, 42, 255);
@@ -373,21 +373,21 @@ background-image: url(images/website-background.jpg);
     <a class="logo-container" href="#">
       <img class="company-logo" src="images/logo.png">
     </a>
-    <a href="index.html">HOME</a>
-    <a href="pages/products.html">PRODUCTS</a>
-    <a href="pages/blog.html">BLOG</a>
-    <a href="pages/research.html">RESEARCH</a>
-    <a href="pages/aboutus.html">ABOUT US</a>
-    <a href="pages/form.html"><button class="login-button">Login</button></a>
+    <a href="../index.html">HOME</a>
+    <a href="../pages/products.html">PRODUCTS</a>
+    <a href="../pages/blog.html">BLOG</a>
+    <a href="../pages/research.html">RESEARCH</a>
+    <a href="../pages/aboutus.html">ABOUT US</a>
+    <a href="../pages/form.html"><button class="login-button">Login</button></a>
   </nav>
 
   <div class="slideshow">
     <video width="100%" autoplay loop muted style="pointer-events: none;">
-      <source src="images/watches/landing.mp4" type="video/mp4">
+      <source src="../images/watches/landing.mp4" type="video/mp4">
     </video>
     <div class="dark-overlay"></div>
     <div class="overlay-text">WHERE EVERY SECOND SHINES BRIGHT<h1><b>NOVA TIMES</b></h1>
-      <a href="pages/products.html" class="explore-button">Explore Our Products</a>
+      <a href="../pages/products.html" class="explore-button">Explore Our Products</a>
     </div>
   </div>
 
@@ -401,8 +401,8 @@ background-image: url(images/website-background.jpg);
         <div class="featured-heading">FEATURED COLLECTION</div>
         <div class="featured-catalogue featured-catalogue-js">
 
-          <div class="featured-product" onclick="window.location.assign('pages/watch1.html')">
-            <img class="product-image" src="images/watches/Home_SP_Pilot_KV_Push.avif">
+          <div class="featured-product" onclick="window.location.assign('../pages/watch1.html')">
+            <img class="product-image" src="../images/watches/Home_SP_Pilot_KV_Push.avif">
             <div class="product-details-layer">
               <div class="product-name-preview">
                 Omega Speedmaster Pilot
@@ -413,8 +413,8 @@ background-image: url(images/website-background.jpg);
             </div>
           </div>
 
-          <div class="featured-product" onclick="window.location.assign('pages/watch2.html')">
-            <img class="product-image" src="images/watches/patek-philippe-calatrava.jpg">
+          <div class="featured-product" onclick="window.location.assign('../pages/watch2.html')">
+            <img class="product-image" src="../images/watches/patek-philippe-calatrava.jpg">
             <div class="product-details-layer">
               <div class="product-name-preview">
                 Patek Philippe Calatrava
@@ -425,8 +425,8 @@ background-image: url(images/website-background.jpg);
             </div>
           </div>
 
-          <div class="featured-product" onclick="window.location.assign('pages/watch3.html')">
-            <img class="product-image" src="images/W1.jpg">
+          <div class="featured-product" onclick="window.location.assign('../pages/watch3.html')">
+            <img class="product-image" src="../images/W1.jpg">
             <div class="product-details-layer">
               <div class="product-name-preview">
                 Shein - Vintage Polygon Pointer
@@ -442,7 +442,7 @@ background-image: url(images/website-background.jpg);
     </section>
 
     <div class="blog-preview" style="position: relative;">
-      <img src="images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
+      <img src="../images/gold-watches-1.jpg" alt="Gold Watches" class="background-image">
       <div class="text-overlay">
         <h2>ABOUT TECHNOLOGY</h2>
         <p>Technology has taken over every aspect of our lives, transforming communication, shopping, and even the
@@ -451,13 +451,13 @@ background-image: url(images/website-background.jpg);
           across the world in virtual marketplaces. We can now inspect watches in previously unheard details thanks to
           high-resolution image and video technology. More precise identification of old watches is now possible thanks
           to advanced testing technology.</p>
-        <a href="pages/blog.html" class="discover-button">Discover More</a>
+        <a href="../pages/blog.html" class="discover-button">Discover More</a>
       </div>
       <div class="article-title">Interesting Articles</div>
     </div>
     <div class="video-preview" style="position: relative;">
       <video class="background-video" autoplay muted loop>
-        <source src="images/watches/bg2.mp4" type="video/mp4">
+        <source src="../images/watches/bg2.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
@@ -470,7 +470,7 @@ background-image: url(images/website-background.jpg);
           serve our esteemed clients. We aim to provide a smooth, advanced, and customer-focused platform that maintains
           the highest levels of quality and innovation by taking inspiration from the best. We truly value the impact of
           these prestigious businesses since their history motivates us to provide an outstanding experience.</p>
-        <a href="pages/research.html" class="discover-button">REFERENCES</a>
+        <a href="../pages/research.html" class="discover-button">REFERENCES</a>
       </div>
     </div>
 
@@ -492,7 +492,7 @@ background-image: url(images/website-background.jpg);
         </div>
       </div>
       <div class="team-name" id="teamName">ADWAITA JOSHI</div>
-      <a href="..pages/aboutus.html">
+      <a href="aboutus.html">
         <div class="abt-us">To preview CV of our team members</div>
       </a>
     </div>
@@ -505,35 +505,35 @@ background-image: url(images/website-background.jpg);
         <td>
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../products.html">Products</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../aboutus.html">About us</a></li>
           </ul>
         </td>
 
         <td>
           <h3>Customer Service</h3>
           <ul>
-            <li><a href="pages/aboutus.html">FAQs</a></li>
-            <li><a href="pages/products.html">Warranty</a></li>
-            <li><a href="pages/products.html">Shipping & Returns</a></li>
-            <li><a href="pages/aboutus.html">Contact Us</a></li>
-            <li><a href="pages/aboutus.html">Help</a></li>
+            <li><a href="../pages/aboutus.html">FAQs</a></li>
+            <li><a href="../pages/products.html">Warranty</a></li>
+            <li><a href="../pages/products.html">Shipping & Returns</a></li>
+            <li><a href="../pages/aboutus.html">Contact Us</a></li>
+            <li><a href="../pages/aboutus.html">Help</a></li>
           </ul>
         </td>
         <td>
           <h3>Follow Us</h3>
           <div class="sns">
             <a href="https://www.facebook.com" target="_blank">
-              <img src="images/icons8-facebook-logo-48.png" alt="Facebook"></a>
+              <img src="../images/icons8-facebook-logo-48.png" alt="Facebook"></a>
             <a href="https://instagram.com" target="_blank">
-              <img src="images/icons8-instagram-logo-48.png" alt="Instagram"></a>
+              <img src="../images/icons8-instagram-logo-48.png" alt="Instagram"></a>
             <a href="https://www.youtube.com" target="_blank">
-              <img src="images/linkedin-log.png" alt="linkedin"></a>
+              <img src="../images/linkedin-log.png" alt="linkedin"></a>
             <a href="https://www.x.com" target="_blank">
-              <img src="images/icons8-x-logo-50.png" alt="X"></a>
+              <img src="../images/icons8-x-logo-50.png" alt="X"></a>
           </div>
         </td>
       </tr>
